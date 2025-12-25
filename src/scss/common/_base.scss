@@ -1,0 +1,105 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  color: $_main_color;
+  background: $_main_bg_color;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+
+.section {
+  scroll-margin-top: 40px;
+
+  @include media(desktop) {
+    scroll-margin-top: 60px;
+  }
+}
+
+.section-title-wrapper {
+  background: #291b5c;
+  padding: 48px 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/about/left-line-mob.png),
+    url(../img/about/right-line-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 61px center, top 61px center;
+  background-size: auto, auto;
+
+  @include media(desktop) {
+    padding: 56px 0 24px;
+    background-image: url(../img/about/left-line-desk.png),
+      url(../img/about/right-line-desk.png);
+  }
+}
+
+.section-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  background: linear-gradient(180deg, #fffef6 0%, #ffe14c 36.54%, #fffef6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include media(desktop) {
+  }
+}
+
+.section-subtitle {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fffef6;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+}

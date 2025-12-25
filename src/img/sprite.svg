@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-arrow-back" viewBox="0 0 32 32">
+      <path fill="none" stroke="#fffef6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M21.333 26 10.666 16 21.333 6" style="stroke:var(--color1, #fffef6)"/>
+    </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+      <path fill="#291b5c" d="M16 0c7.953 0 14.4 6.447 14.4 14.4S23.953 28.8 16 28.8 1.6 22.353 1.6 14.4 8.047 0 16 0z" style="fill:var(--color2, #291b5c)"/>
+      <path fill="none" stroke="#ffe16d" stroke-width=".8" d="M16 .4c7.732 0 14 6.268 14 14s-6.268 14-14 14-14-6.268-14-14S8.268.4 16 .4z" style="stroke:var(--color3, #ffe16d)"/>
+      <path fill="none" stroke="#fffef6" stroke-linecap="round" stroke-linejoin="round" stroke-width=".8" d="m18.4 19.2-4.8-4.8 4.8-4.8" style="stroke:var(--color1, #fffef6)"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+      <path fill="#291b5c" d="M16 0c7.953 0 14.4 6.447 14.4 14.4S23.953 28.8 16 28.8 1.6 22.353 1.6 14.4 8.047 0 16 0z" style="fill:var(--color2, #291b5c)"/>
+      <path fill="none" stroke="#ffe16d" stroke-width=".8" d="M16 .4c7.732 0 14 6.268 14 14s-6.268 14-14 14-14-6.268-14-14S8.268.4 16 .4z" style="stroke:var(--color3, #ffe16d)"/>
+      <path fill="none" stroke="#fffef6" stroke-linecap="round" stroke-linejoin="round" stroke-width=".8" d="m13.6 19.2 4.8-4.8-4.8-4.8" style="stroke:var(--color1, #fffef6)"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 32 32">
+      <path fill="none" stroke="#ffe16d" stroke-width="1.333" d="M5.333.667h21.333a4.667 4.667 0 0 1 4.667 4.667v21.333a4.667 4.667 0 0 1-4.667 4.667H5.333a4.667 4.667 0 0 1-4.667-4.667V5.334A4.667 4.667 0 0 1 5.333.667z" style="stroke:var(--color3, #ffe16d)"/>
+      <path fill="none" stroke="#fffef6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="m7 7 9 9m0 0-9 9m9-9 9 9m-9-9 9-9" style="stroke:var(--color1, #fffef6)"/>
+    </symbol>
+    <symbol id="icon-hand" viewBox="0 0 32 32">
+      <path fill="#ffe16d" d="M12.571 29.714c-.631 0-1.17-.223-1.616-.67s-.67-.985-.67-1.616v-16l-2.696 3.607c-.488.643-1.125.964-1.911.964-.619 0-1.149-.226-1.589-.679s-.661-.988-.661-1.607c0-.512.155-.97.464-1.375l6.857-9.143c.452-.607 1.06-.911 1.821-.911h12.822c.262 0 .497.08.705.241s.342.366.402.616l1.643 6.571a14.22 14.22 0 0 1 .429 3.464v3.875c0 .488-.167.911-.5 1.268s-.738.536-1.214.536-.881-.167-1.214-.5a1.654 1.654 0 0 1-.5-1.214h-.571v1.089c0 .571-.191 1.057-.571 1.455s-.857.598-1.429.598c-.548 0-1.018-.196-1.411-.589s-.589-.863-.589-1.411V17.14h-.571v1.607c0 .655-.22 1.217-.661 1.688s-.982.705-1.625.705c-.631 0-1.17-.223-1.616-.67s-.67-.985-.67-1.616V17.14h-.571v10.178c0 .655-.22 1.217-.661 1.688s-.982.705-1.625.705zm0 2.286c1.274 0 2.354-.461 3.241-1.384s1.33-2.021 1.33-3.295v-3.928c.262.024.452.036.571.036 1.178 0 2.208-.411 3.089-1.232.56.25 1.149.375 1.768.375 1.345 0 2.44-.518 3.286-1.554.321.083.655.125 1 .125 1.119 0 2.066-.402 2.839-1.205s1.161-1.765 1.161-2.884v-3.875c0-1.381-.167-2.72-.5-4.018L28.713 2.59c-.191-.762-.595-1.384-1.214-1.866S26.177.001 25.392.001H12.57c-.714 0-1.396.164-2.045.491s-1.188.771-1.616 1.33l-6.857 9.143a4.468 4.468 0 0 0-.911 2.75c0 1.25.443 2.324 1.33 3.223s1.955 1.348 3.205 1.348a4.46 4.46 0 0 0 2.321-.625v9.768c0 1.262.446 2.339 1.339 3.232S11.306 32 12.568 32zm2.286-25.143v6.857h-.571V6.857h.571zm4.572 0v6.857h-.571V6.857h.571zm4.571 0v6.857h-.571V6.857H24z" style="fill:var(--color3, #ffe16d)"/>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 32 32">
+      <path fill="none" stroke="#ffe16d" stroke-width="1.333" d="M5.333.667h21.333a4.667 4.667 0 0 1 4.667 4.667v21.333a4.667 4.667 0 0 1-4.667 4.667H5.333a4.667 4.667 0 0 1-4.667-4.667V5.334A4.667 4.667 0 0 1 5.333.667z" style="stroke:var(--color3, #ffe16d)"/>
+      <path fill="none" stroke="#fffef6" stroke-linecap="round" stroke-width="1.333" d="M7.5 9.5h17m-17 12h17m-17-6h17" style="stroke:var(--color1, #fffef6)"/>
+    </symbol>
+  </defs>
+</svg>
