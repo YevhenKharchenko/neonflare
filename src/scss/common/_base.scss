@@ -53,19 +53,9 @@ html {
 .section-title-wrapper {
   background: #291b5c;
   padding: 48px 0 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../img/about/left-line-mob.png),
-    url(../img/about/right-line-mob.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top 61px center, top 61px center;
-  background-size: auto, auto;
 
   @include media(desktop) {
     padding: 56px 0 24px;
-    background-image: url(../img/about/left-line-desk.png),
-      url(../img/about/right-line-desk.png);
   }
 }
 
@@ -73,6 +63,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 17px;
+  padding: 0;
 }
 
 .section-title {
