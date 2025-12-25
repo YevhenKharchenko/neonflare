@@ -3,6 +3,7 @@ import 'swiper/css/bundle';
 
 const screenshotsLeftArrow = document.getElementById('screenshotsLeftArrow');
 const screenshotsRightArrow = document.getElementById('screenshotsRightArrow');
+const screenshotsDots = document.querySelectorAll('.screenshots-dot');
 
 let screenshotsSwiper;
 
@@ -31,9 +32,11 @@ screenshotsSwiper = new Swiper('.screenshots-swiper-container', {
         .querySelector('.screenshots-swiper-container')
         .classList.add('show');
       updateScreenshotsArrows(swiper);
+      updateScreenshotsDots(swiper.activeIndex);
     },
     slideChange(swiper) {
       updateScreenshotsArrows(swiper);
+      updateScreenshotsDots(swiper.activeIndex);
     },
   },
 });
@@ -51,4 +54,16 @@ screenshotsLeftArrow.addEventListener('click', () => {
 
 screenshotsRightArrow.addEventListener('click', () => {
   screenshotsSwiper.slideNext();
+});
+
+function updateScreenshotsDots(index) {
+  screenshotsDots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+screenshotsDots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    screenshotsSwiper.slideTo(index);
+  });
 });
