@@ -1,5 +1,5 @@
 .footer {
-  background: #10507c;
+  background: #291b5c;
   padding: 48px 0;
 
   @include media(desktop) {
@@ -11,30 +11,17 @@
 }
 
 .footer-btn {
-  box-shadow: 0 4px 4px rgba(8, 29, 44, 0.4),
-    inset 0 4px 24px 6px rgba(255, 253, 253, 0.2);
-  background: #e9c125;
-  border: 1px solid #fffdfd;
-  border-radius: 8px;
-  padding: 12px;
-  width: 100%;
-  max-width: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #081d2c;
+  max-width: max-content;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
-  transition: background 0.3s ease-in-out;
 
   &:hover,
   &:focus,
   &:active {
-    background: #fffdfd;
   }
 
   @include media(desktop) {
@@ -52,7 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 16px;
 
   @include media(desktop) {
   }
@@ -63,11 +50,11 @@
 
 .footer-link {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #fffdfd;
+  color: #fffef6;
 
   @include media(desktop) {
     font-size: 16px;
@@ -78,8 +65,8 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 12px;
+  color: #fffef6;
   text-align: center;
-  color: #fffdfd;
 
   @include media(desktop) {
     font-size: 16px;

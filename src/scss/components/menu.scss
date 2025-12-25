@@ -1,8 +1,8 @@
 .context-menu {
   display: none;
-  background: #10507c;
+  background: linear-gradient(180deg, #291b5c 26.85%, #573eb1 100%);
   border-radius: 0 0 40px 40px;
-  padding: 30px 12px 71px;
+  padding: 40px 28px 54px;
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
@@ -22,28 +22,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 48px;
+  gap: 16px;
+  margin-bottom: 40px;
 }
 
 .context-list-item {
   width: 100%;
-  max-width: 200px;
+  max-width: 170px;
 }
 
 .context-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px 0px;
+  padding: 8px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  color: #fffdfd;
-  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  color: #fffef6;
+  transition: border 0.3s ease-in-out;
 
   &:active {
-    border-bottom: 1px solid #e9c125;
+    border-bottom: 1px solid #fffef6;
   }
 }
 
@@ -51,7 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
 }
 
 .context-privacy-link {
@@ -64,7 +64,7 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-align: center;
-  color: #fffdfd;
+  color: #fff;
   transition: all 0.3s ease-in-out;
 }
 
