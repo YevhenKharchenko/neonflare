@@ -1,5 +1,5 @@
 .policy-section {
-  background: #fcfcfc;
+  background: #fffef6;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -10,11 +10,9 @@
 }
 
 .policy-title-wrapper {
-  padding-top: 96px;
-  background-position: bottom 32px center;
+  padding-top: 80px;
 
   @include media(desktop) {
-    background-position: bottom 40px center;
   }
 }
 
@@ -23,7 +21,7 @@
   font-weight: 500;
   font-size: 24px;
   letter-spacing: -0.02em;
-  color: #081d2c;
+  color: #170f36;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -33,10 +31,10 @@
 .policy-text {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.3;
   letter-spacing: -0.01em;
-  color: #081d2c;
+  color: #170f36;
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -55,10 +53,10 @@
 .policy-item {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.3;
   letter-spacing: -0.01em;
-  color: #081d2c;
+  color: #170f36;
   margin-bottom: 8px;
 
   &:last-child {

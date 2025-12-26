@@ -57,6 +57,8 @@
 }
 
 .faq-item-answer-wrapper {
+  padding-left: 24px;
+  padding-right: 24px;
   max-height: 0;
   overflow: hidden;
   transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out,
@@ -127,11 +129,13 @@
 }
 
 .faq-list-item.faq-open .faq-item-answer-wrapper {
-  padding: 4px 24px 12px 24px;
+  padding-top: 4px;
+  padding-bottom: 12px;
   opacity: 1;
   max-height: 500px;
 
   @include media(desktop) {
-    padding: 5px 24px 12px 24px;
+    padding-top: 5px;
+    padding-bottom: 12px;
   }
 }
