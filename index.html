@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Adventure – Match 3 Game | A Global Puzzle Journey</title>
+    <meta
+      name="description"
+      content="Royal Adventure is a match-3 puzzle game with a rich storyline, royal characters, globe-trotting journeys, and relaxing yet strategic gameplay."
+    />
+    <link rel="canonical" href="https://neonflare.site" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="NeonFlare Games" />
+    <meta property="og:title" content="Royal Adventure – Match 3 Game" />
+    <meta
+      property="og:description"
+      content="Join a royal journey around the world in this story-driven match-3 adventure."
+    />
+    <meta
+      property="og:image"
+      content="https://neonflare.site/assets/og-royal.jpg"
+    />
+    <meta property="og:url" content="https://neonflare.site" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Royal Adventure – Match 3 Journey" />
+    <meta
+      name="twitter:description"
+      content="Solve puzzles, unlock journeys, and travel the world in a royal match-3 adventure."
+    />
+    <meta
+      name="twitter:image"
+      content="https://neonflare.site/assets/og-royal.jpg"
+    />
+    <link rel="icon" type="image/png" href="/neonflare/favicon.png" />
+    
+    <script type="module" crossorigin src="/neonflare/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/neonflare/assets/vendor-26f8a4ee.js">
+    <link rel="stylesheet" href="/neonflare/assets/vendor-99dc0a1c.css">
+    <link rel="stylesheet" href="/neonflare/assets/styles-9ce8a5d2.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about"
+            >The Story Begins</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gameplay">Gameplay</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#tools">Royal Tools</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#map">Journey Maps</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#play">Play Your Way</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#screenshots"
+            >Screenshots</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#reviews">Reviews</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="24" height="24">
+          <use href="/neonflare/assets/sprite-ab398886.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="24" height="24">
+          <use href="/neonflare/assets/sprite-ab398886.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <h1 class="hero-main-title">
+        A royal match-3 adventure across the world
+      </h1>
+      <p class="hero-text">
+        Solve puzzles, unlock journeys, and travel the globe with King William
+        and his companions.
+      </p>
+      <a
+        class="hero-btn"
+        href="https://play.google.com/store/apps/details?id=com.dreamspark.royal.adventure&hl=en&gl=us"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Start the Royal Adventure
+      </a>
+    </div>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="section-title-wrapper about-title-wrapper">
+    <div class="container section-title-container">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARHSURBVHgB7VrNThRBEK7q3lUxIXoxHvSATyC+AbwBF87C1ajxDcBXIMZ4A84clCeAN5A3YBO9GC4YVH52psuq6uqZ2eFvWLhtf8mku+uv/76pnZlehIyMMUD7b+fA42sgmOPmTJTiHiDtQUnb+OLTt7YPQkbGDUD7H2bAl+tGsqswgDCcxxdfBkmQyZbRGbT/Zhac3+Hq444uhxBKJtznPWlksmV0gmY0V36H7kRLYMINX0mGc5CR0QWuvElGa+Ix+P66VHJmm1DYA/4KP3vNghACYRccbuDztc0LbBdY9xVug0DzObNNIOjH+xUmz4495MdsJfWSNlTXhoMFuC34zTWTbcJA+++WOMusXmrAOs16o3gJt+4Y5pCIELa2HCwuCvHidXDg4QnyT6zn9l8PR87BtJO2h3/HDlDk6GCK5Sdn3HaxjUMupW4lFlEOpYOCy56UzkOfYxenXm1KlkFgHesLLjHEtsZzsV7y5aUklhH7cdIPpY92FC+k6BM4npOyMBlfAdiW5wnsQyR69g/efFHtkg0leTB/iDEo1HXRESV7k4s9lyGNUXRcBpY785c296Z1tQ31GEVHNh+s+uQxUxwzcB2xtqnGRGksEivGJp4LqtzW0sZHOsdu5EA1xK7mXRAz2+JiQ/QT4Emou/jN9emG+uFDgKmpWD85AXiQFKd83bP6vVY3fYBeqhJBUdizYlGbpKoXLvlaWJaoC12aSMvQetZ0lKaiXA9lS816Z2uueiGe2ZMQV26sIC3eZqSoMr3qmiDbL2xvA1b6QNYHgZHLLNhHvMhiaheEIxHknq52mBoNxBGiUKtntLlIbKGIUoV0AEApBHWnDlHD8W7gRt4RBgNuPOfKUxPwwB894nKa0gggrjaB8Q1OkvP9RtgzK/sxxnCISrBC6rJowqxevPhehV7Pmp6YXKMj9Czzrp60tzEogdKSh0gW2VPdVyMriZ+P5AtVBFJCJaDYhFonJJGmSwsdInkqi0QOKdEurbOvkrUKZfakyb0J2fTUDygB0UqINEkxXKO/FiqpS51RJZd41RTH5Ysx+M5eIXHPjQxmZsYav0yQFvwI4U91h8fy+KKAQrIz2wDGsIh3R78vhLJYTLTeg3pxJF4RxVBIFktZTQjUa8QO56cd0lIwYYSjLlQJKUZOGcSDEYqaztrGELOcEpCw2jvJaHIlYqJlRCEnNmNo9og2zsiq9cYNorOlxvpJ3DYLJLYQzjJi5FwiENVDbrqAZWQ8x/CY0UyOOB7jNFPeUXbjY6z86WPCoA//8iZ6FTwuNT+BdPK5Dj1cyG+jEwY+IN/l7PvxUgPWtb+1qY98hxsfA3y2tp3JNoFg8qzyr+8y/7TtmuiQfy6FhPOquwilX1a7m0OOq+a1X8jI6IjbHsTnzJbRGUqa4F+B/H3oOmimlAP4SDT1h4yMMaDnpcDHWMinC4izJh7os11Jm/qc18J/Osfvvoty5UQAAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII= " width="62" height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+      <h2 class="section-title about-title">THE STORY BEGINS</h2>
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgB7VlNbhRHFH6vasbGIkpYWMoiWYCUfYy4ANyAnADYRiHKDXCugFCUHeYECSfAOQCKDxDJEyUbpCxIogibmaqX71W9rq75AXoYi83UZ1fXz/upV91fv57qZloBOf3mJnm+Q0I30b2aR/mEWE4oyFO+9uhnamhYE1x35PS7q+TDYyPZ2zChOL3F136cUEPDQBSyyenXB+T8MzSvDLR9STGAcD+cUEPDACSypYzmwq80nGgdQLjp9ZbhGobA5WNYJ6PVuEJ+/JgaGgaAsRm4TY5/ok0QBY/TR8eLw7bReIDfgAekxGQ6xlxH/PnDJ9SwdXD4u02bQneuC5A/vn0AYj2zzUbOmtoOcpRkDVsHfYx+SZtiYfcqp/fvItsdvlEfspT1GrYKLL/fF7oQdG54uAmrEUcSFEbRNjutQ27bWF2yPBa5VG2CjAm2TooPUDv1Gf1Op54vyVHYqww6aEeGPtq6qFL7UHTTPE71Im5Xi0F9jEwH9g5xiM91dFL0nAslfqlicPXYyPoRuiPYIvYg5lfXBTmhL3YuvMsxzWLfLnKUkTeZrZFEEJuOo43xKXTH3mzUt46/ljSPQE47CzX09nazbSqXY2n/FSLt73fnNZ87qx1dFDJx1jLp+cnSOalkXNVMMj/Z8txzvb7PrperryhMtHh/Oc22vWM9KwI9p3GxxRHnTVQ/XVNz5hZPJed5ImqnF1cJB38LbubhrYQ+rqW72K82DYFpVDq5GvlsO5vZuNh50NrGtBqPez/TdLA170BvF/+oL+2iwG4P8exdyn7+4+ULvq+HFyh/VjHnWlczoYuAYOI1uZb09WLphdUOS750Soos60gshZDpWJ806onZyRn+kk+iUpP5crxso3D5LVAmo85XM7IinW3gUxXTmnPsMSWZ+m7Ja1GiqZ6yLPbm0J+fP5EwUFlbTcoAXa9kdUKLwp6bMj9ImWRKOG8lDyJixDNGfzYzgmLOqZlWvCN+jRjPc/vsnOkMdq+w2FdnOfbLevgI5R/8/8v08m9b06fm4Dei589LbEju8gttCpaeCIMJJ6bPbKyTQliu7uZEisTAmlC5zdzVmaJmkolbsqXME6sbVrnG7eqAuFqAPlC5XPy59drBJd95Ic5b1tJMRtkvWyZTwnW3ohJPCV2Io3KfS8gKebBmG+xDXD6zHNKPhhXJriyyz5KBcx+P5dGon1sz23S24HsM+Y61kdXOQTrNbB1KZusGPrZZPzGdFzb+BdGNGykQPSivj1Du0Cbw7iv+7OHTrpt+/OtO9O02d9srkO2CS+/H9P3X+2NSE02RfEb5/o0WkDWibR/yMyT4e6SfntaHfq66tUoAwh3iSXAPT7HjoitybC+AD6lh69A+xDd8MJRfx4k00V+nIbvTlKH0A3wjWsNwrNw7pu+lhM9YjK8LzAc2PEm/7YI8WfUdtKHhXfgflb8aCDXwJ84AAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg== "
+          width="62"
+          height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg=="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+    </div>
+  </div>
+  <div class="about-bg-wrapper">
+    <div class="container about-container">
+      <p class="section-subtitle about-subtitle">
+        Royal Adventure is more than a puzzle game — it’s a journey.
+      </p>
+      <p class="about-text">
+        Join King William, Princess Nova, and Butler Nathan as they soar across
+        the world in a magnificent hot-air balloon. From lush tropical
+        rainforests to frozen tundras, every destination brings new challenges,
+        surprises, and stories.
+      </p>
+      <p class="about-text about-bottom-text">
+        Each level you solve pushes the adventure forward. Each journey reveals
+        a new chapter of a royally styled tale filled with wonder and discovery.
+        Think regular match-3, but with actual reasons to keep playing.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="section gameplay-section" id="gameplay">
+  <div class="section-title-wrapper gameplay-title-wrapper">
+    <div class="container section-title-container">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARHSURBVHgB7VrNThRBEK7q3lUxIXoxHvSATyC+AbwBF87C1ajxDcBXIMZ4A84clCeAN5A3YBO9GC4YVH52psuq6uqZ2eFvWLhtf8mku+uv/76pnZlehIyMMUD7b+fA42sgmOPmTJTiHiDtQUnb+OLTt7YPQkbGDUD7H2bAl+tGsqswgDCcxxdfBkmQyZbRGbT/Zhac3+Hq444uhxBKJtznPWlksmV0gmY0V36H7kRLYMINX0mGc5CR0QWuvElGa+Ix+P66VHJmm1DYA/4KP3vNghACYRccbuDztc0LbBdY9xVug0DzObNNIOjH+xUmz4495MdsJfWSNlTXhoMFuC34zTWTbcJA+++WOMusXmrAOs16o3gJt+4Y5pCIELa2HCwuCvHidXDg4QnyT6zn9l8PR87BtJO2h3/HDlDk6GCK5Sdn3HaxjUMupW4lFlEOpYOCy56UzkOfYxenXm1KlkFgHesLLjHEtsZzsV7y5aUklhH7cdIPpY92FC+k6BM4npOyMBlfAdiW5wnsQyR69g/efFHtkg0leTB/iDEo1HXRESV7k4s9lyGNUXRcBpY785c296Z1tQ31GEVHNh+s+uQxUxwzcB2xtqnGRGksEivGJp4LqtzW0sZHOsdu5EA1xK7mXRAz2+JiQ/QT4Emou/jN9emG+uFDgKmpWD85AXiQFKd83bP6vVY3fYBeqhJBUdizYlGbpKoXLvlaWJaoC12aSMvQetZ0lKaiXA9lS816Z2uueiGe2ZMQV26sIC3eZqSoMr3qmiDbL2xvA1b6QNYHgZHLLNhHvMhiaheEIxHknq52mBoNxBGiUKtntLlIbKGIUoV0AEApBHWnDlHD8W7gRt4RBgNuPOfKUxPwwB894nKa0gggrjaB8Q1OkvP9RtgzK/sxxnCISrBC6rJowqxevPhehV7Pmp6YXKMj9Czzrp60tzEogdKSh0gW2VPdVyMriZ+P5AtVBFJCJaDYhFonJJGmSwsdInkqi0QOKdEurbOvkrUKZfakyb0J2fTUDygB0UqINEkxXKO/FiqpS51RJZd41RTH5Ysx+M5eIXHPjQxmZsYav0yQFvwI4U91h8fy+KKAQrIz2wDGsIh3R78vhLJYTLTeg3pxJF4RxVBIFktZTQjUa8QO56cd0lIwYYSjLlQJKUZOGcSDEYqaztrGELOcEpCw2jvJaHIlYqJlRCEnNmNo9og2zsiq9cYNorOlxvpJ3DYLJLYQzjJi5FwiENVDbrqAZWQ8x/CY0UyOOB7jNFPeUXbjY6z86WPCoA//8iZ6FTwuNT+BdPK5Dj1cyG+jEwY+IN/l7PvxUgPWtb+1qY98hxsfA3y2tp3JNoFg8qzyr+8y/7TtmuiQfy6FhPOquwilX1a7m0OOq+a1X8jI6IjbHsTnzJbRGUqa4F+B/H3oOmimlAP4SDT1h4yMMaDnpcDHWMinC4izJh7os11Jm/qc18J/Osfvvoty5UQAAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII= " width="62" height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+      <h2 class="section-title gameplay-title">GAMEPLAY WITH A TWIST</h2>
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgB7VlNbhRHFH6vasbGIkpYWMoiWYCUfYy4ANyAnADYRiHKDXCugFCUHeYECSfAOQCKDxDJEyUbpCxIogibmaqX71W9rq75AXoYi83UZ1fXz/upV91fv57qZloBOf3mJnm+Q0I30b2aR/mEWE4oyFO+9uhnamhYE1x35PS7q+TDYyPZ2zChOL3F136cUEPDQBSyyenXB+T8MzSvDLR9STGAcD+cUEPDACSypYzmwq80nGgdQLjp9ZbhGobA5WNYJ6PVuEJ+/JgaGgaAsRm4TY5/ok0QBY/TR8eLw7bReIDfgAekxGQ6xlxH/PnDJ9SwdXD4u02bQneuC5A/vn0AYj2zzUbOmtoOcpRkDVsHfYx+SZtiYfcqp/fvItsdvlEfspT1GrYKLL/fF7oQdG54uAmrEUcSFEbRNjutQ27bWF2yPBa5VG2CjAm2TooPUDv1Gf1Op54vyVHYqww6aEeGPtq6qFL7UHTTPE71Im5Xi0F9jEwH9g5xiM91dFL0nAslfqlicPXYyPoRuiPYIvYg5lfXBTmhL3YuvMsxzWLfLnKUkTeZrZFEEJuOo43xKXTH3mzUt46/ljSPQE47CzX09nazbSqXY2n/FSLt73fnNZ87qx1dFDJx1jLp+cnSOalkXNVMMj/Z8txzvb7PrperryhMtHh/Oc22vWM9KwI9p3GxxRHnTVQ/XVNz5hZPJed5ImqnF1cJB38LbubhrYQ+rqW72K82DYFpVDq5GvlsO5vZuNh50NrGtBqPez/TdLA170BvF/+oL+2iwG4P8exdyn7+4+ULvq+HFyh/VjHnWlczoYuAYOI1uZb09WLphdUOS750Soos60gshZDpWJ806onZyRn+kk+iUpP5crxso3D5LVAmo85XM7IinW3gUxXTmnPsMSWZ+m7Ja1GiqZ6yLPbm0J+fP5EwUFlbTcoAXa9kdUKLwp6bMj9ImWRKOG8lDyJixDNGfzYzgmLOqZlWvCN+jRjPc/vsnOkMdq+w2FdnOfbLevgI5R/8/8v08m9b06fm4Dei589LbEju8gttCpaeCIMJJ6bPbKyTQliu7uZEisTAmlC5zdzVmaJmkolbsqXME6sbVrnG7eqAuFqAPlC5XPy59drBJd95Ic5b1tJMRtkvWyZTwnW3ohJPCV2Io3KfS8gKebBmG+xDXD6zHNKPhhXJriyyz5KBcx+P5dGon1sz23S24HsM+Y61kdXOQTrNbB1KZusGPrZZPzGdFzb+BdGNGykQPSivj1Du0Cbw7iv+7OHTrpt+/OtO9O02d9srkO2CS+/H9P3X+2NSE02RfEb5/o0WkDWibR/yMyT4e6SfntaHfq66tUoAwh3iSXAPT7HjoitybC+AD6lh69A+xDd8MJRfx4k00V+nIbvTlKH0A3wjWsNwrNw7pu+lhM9YjK8LzAc2PEm/7YI8WfUdtKHhXfgflb8aCDXwJ84AAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg== "
+          width="62"
+          height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg=="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+    </div>
+  </div>
+  <div class="gameplay-bg-wrapper">
+    <div class="container gameplay-container">
+      <div class="gameplay-content-wrapper">
+        <div class="gameplay-text-wrapper">
+          <p class="gameplay-text">
+            Royal Adventure takes familiar match-3 mechanics and layers them
+            with depth:
+          </p>
+          <ul class="gameplay-list">
+            <li class="gameplay-list-item">
+              <img
+                class="gameplay-item-img"
+                src="data:image/png;base64,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"
+                alt="Feature"
+                width="24"
+                height="24"
+              />
+              <p class="gameplay-item-text">Multi-layered puzzle boards</p>
+            </li>
+            <li class="gameplay-list-item">
+              <img
+                class="gameplay-item-img"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUySURBVHgBpVVrUBNXFL7ZjRAIIRACNJKxkiCRSEDUgmPUqdUq1qLFR9Gx1j5sa0Wq9dmpFtE6tqWPqR2lo9Nq7UwfdtRBVDpStaBDh2JRScAGEpNAAtmQZEnIYxOy2dskJhUwValnZn/ce+75vnu+c85dAABAwXAbuR6NRcbC7W7KBWEvZvfIQw46GL0FYzpNthttmBNrbLwFBQIBO7j5bfn7poJ1ZTxmIjfFDaGdQaOxQgHkKMBJ/yV1Z2uv8fo1naimucGnVqttSMA7hsW2Nhw/SjpwM9pucMZ4IMRC4I+SSRDcOkh1XmqU81zGXlRx+RzJTk4dDDgDBMjmfXtEvIQ48sqhT0mvx462GRxcl5dSPgJJENzkcLe2ajCBxX/zv2tPksIMEV2txFMD2AECyv+h63bvimGx4gYv7N1Juuw2VNnvSTfaXbIQSaTCB/ZIs5No1vR7JnXfakFUddXklJlz6Co3wThWc8wZwKaNCPDteXeLncR6GAvLP6fHJSRS/Hh6E5cZLQ37h561uNxXdXZK2tHcROuoq/FlZecih386EV1fXw/DZ2kRbuXbsmFT/xiTPq5o/1f0qOhYmJEaW8eJiS4MSRowCic8dToHnKdtkwNZzc9U5gQRWbLhTQYY0RzICIIAK/2LqoOJphiO9dyuMtLjcdFURuf8Nr3hVEhOqq9/4ILeCeYZtRrQ8uNRisdJdEcCj5TBsOKVvlVqjLVgnOKPq1DUXy6HFa9kcWNTUlL4r+i1XeB8xQ4qOT3DufWjA+wREj6U4F+SbRs39zAc1pRndx5A2InxCJvDBH06PTy9o8wHUsbilV9XpYIHzAzyAIJgi3526Ms0AGCny9QDWYlMYOzuBr9sLwMMvrDrYeCRCOhDMgv4AinT1hw8VCWWTkNN3V3g1I5NwA4QWgyHuzV0zhc6G1ZjWEvfJ1FJSYmKglAol8nSFQqFtklr2M7nP1Gpu6OlTm7biLTbXfC1DVupBP54FAGwaMEMSa1UKuWzWKwugiDaGxoasofi3TdADAYjAUXROR6CMFdf70gTjuMeUd9W+b5753WETB1Xi3JSe7Frvz4pfqYQCiTi1aKs3JqOm81rTWbzTKvVWmGxWP4CDzCaSCRiFRQUwFnSGRQBIbzWqiBfmjmd+mD33ovhQ+UV+5rWL5hLnr38p9f/OMIJwvHezEwRjKRKpC5C8qbmHY5nstY/NXsOcN+6Drn50hMV5bteDWkd+MjS0s3VSQ5LUZPJiujUSsBgMvffbGnZA+7Oyn9KhGZkT00XTRR/L2+9CWmkh4ZRAF757eJGm82mC4FTOTk56WbclNRuwObifQZg6bf7hBlZT8ez2OcxrCfwEoezGfZSonw+P2pKjkR1R6X0Wgbc9D6ztcdHetLy8vIa8/PzQXu7iUUQXUn+SVMbMSOwDdiAQDjxdJfhxjKlSjk4eXLedYIY4PqbwwpCQze0vXzZk/Pter3OK5PL6AufW3jmRksz3y+xRKHo+EOj0QI6HYf+JhjEcdzfadQb/j/WmPrf65Y/v2jJe5jRGCWXyzy5U2eYwL3WvVuHVcXFhcuLim1ZudPcdEY8XFaytjxcj5ESguF1o4XXK1auXcxOGgv5AhFR+eEn1IrFxYVBH4/H456rvggvNbZSU0RZcNGSpfOGBo7CkAVFyyateWEprL/dS5754RQUi8VRtOTk5Li3V79sxw166I5NuPTN8SPzwWPYyhWrrsaQ7ll9XohfOF+dFEw7MzM3bbp09ovgngz/14KxEolkYnj9D1nAYiwNmfX6AAAAAElFTkSuQmCC"
+                alt="Feature"
+                width="24"
+                height="24"
+              />
+              <p class="gameplay-item-text">
+                Obstacle-filled challenges that evolve as you play
+              </p>
+            </li>
+            <li class="gameplay-list-item">
+              <img
+                class="gameplay-item-img"
+                src="data:image/png;base64,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"
+                alt="Feature"
+                width="24"
+                height="24"
+              />
+              <p class="gameplay-item-text">
+                Covering mechanics, rotating elements, and environmental hazards
+              </p>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="/neonflare/assets/gameplay-img-desk-9ba4f60d.png "
+            media="(min-width: 1440px)"
+            width="353"
+            height="319" />
+          <source
+            srcset="/neonflare/assets/gameplay-img-mob-004e14d1.png "
+            width="340"
+            height="319" />
+          <img
+            class="gameplay-img"
+            src="/neonflare/assets/gameplay-img-mob-004e14d1.png"
+            alt="Screenshot of the game"
+            width="340"
+            height="319"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section tools-section" id="tools">
+  <div class="section-title-wrapper tools-title-wrapper">
+    <div class="container section-title-container">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARHSURBVHgB7VrNThRBEK7q3lUxIXoxHvSATyC+AbwBF87C1ajxDcBXIMZ4A84clCeAN5A3YBO9GC4YVH52psuq6uqZ2eFvWLhtf8mku+uv/76pnZlehIyMMUD7b+fA42sgmOPmTJTiHiDtQUnb+OLTt7YPQkbGDUD7H2bAl+tGsqswgDCcxxdfBkmQyZbRGbT/Zhac3+Hq444uhxBKJtznPWlksmV0gmY0V36H7kRLYMINX0mGc5CR0QWuvElGa+Ix+P66VHJmm1DYA/4KP3vNghACYRccbuDztc0LbBdY9xVug0DzObNNIOjH+xUmz4495MdsJfWSNlTXhoMFuC34zTWTbcJA+++WOMusXmrAOs16o3gJt+4Y5pCIELa2HCwuCvHidXDg4QnyT6zn9l8PR87BtJO2h3/HDlDk6GCK5Sdn3HaxjUMupW4lFlEOpYOCy56UzkOfYxenXm1KlkFgHesLLjHEtsZzsV7y5aUklhH7cdIPpY92FC+k6BM4npOyMBlfAdiW5wnsQyR69g/efFHtkg0leTB/iDEo1HXRESV7k4s9lyGNUXRcBpY785c296Z1tQ31GEVHNh+s+uQxUxwzcB2xtqnGRGksEivGJp4LqtzW0sZHOsdu5EA1xK7mXRAz2+JiQ/QT4Emou/jN9emG+uFDgKmpWD85AXiQFKd83bP6vVY3fYBeqhJBUdizYlGbpKoXLvlaWJaoC12aSMvQetZ0lKaiXA9lS816Z2uueiGe2ZMQV26sIC3eZqSoMr3qmiDbL2xvA1b6QNYHgZHLLNhHvMhiaheEIxHknq52mBoNxBGiUKtntLlIbKGIUoV0AEApBHWnDlHD8W7gRt4RBgNuPOfKUxPwwB894nKa0gggrjaB8Q1OkvP9RtgzK/sxxnCISrBC6rJowqxevPhehV7Pmp6YXKMj9Czzrp60tzEogdKSh0gW2VPdVyMriZ+P5AtVBFJCJaDYhFonJJGmSwsdInkqi0QOKdEurbOvkrUKZfakyb0J2fTUDygB0UqINEkxXKO/FiqpS51RJZd41RTH5Ysx+M5eIXHPjQxmZsYav0yQFvwI4U91h8fy+KKAQrIz2wDGsIh3R78vhLJYTLTeg3pxJF4RxVBIFktZTQjUa8QO56cd0lIwYYSjLlQJKUZOGcSDEYqaztrGELOcEpCw2jvJaHIlYqJlRCEnNmNo9og2zsiq9cYNorOlxvpJ3DYLJLYQzjJi5FwiENVDbrqAZWQ8x/CY0UyOOB7jNFPeUXbjY6z86WPCoA//8iZ6FTwuNT+BdPK5Dj1cyG+jEwY+IN/l7PvxUgPWtb+1qY98hxsfA3y2tp3JNoFg8qzyr+8y/7TtmuiQfy6FhPOquwilX1a7m0OOq+a1X8jI6IjbHsTnzJbRGUqa4F+B/H3oOmimlAP4SDT1h4yMMaDnpcDHWMinC4izJh7os11Jm/qc18J/Osfvvoty5UQAAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII= " width="62" height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+      <h2 class="section-title tools-title">ROYAL TOOLS & POWER MOVES</h2>
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgB7VlNbhRHFH6vasbGIkpYWMoiWYCUfYy4ANyAnADYRiHKDXCugFCUHeYECSfAOQCKDxDJEyUbpCxIogibmaqX71W9rq75AXoYi83UZ1fXz/upV91fv57qZloBOf3mJnm+Q0I30b2aR/mEWE4oyFO+9uhnamhYE1x35PS7q+TDYyPZ2zChOL3F136cUEPDQBSyyenXB+T8MzSvDLR9STGAcD+cUEPDACSypYzmwq80nGgdQLjp9ZbhGobA5WNYJ6PVuEJ+/JgaGgaAsRm4TY5/ok0QBY/TR8eLw7bReIDfgAekxGQ6xlxH/PnDJ9SwdXD4u02bQneuC5A/vn0AYj2zzUbOmtoOcpRkDVsHfYx+SZtiYfcqp/fvItsdvlEfspT1GrYKLL/fF7oQdG54uAmrEUcSFEbRNjutQ27bWF2yPBa5VG2CjAm2TooPUDv1Gf1Op54vyVHYqww6aEeGPtq6qFL7UHTTPE71Im5Xi0F9jEwH9g5xiM91dFL0nAslfqlicPXYyPoRuiPYIvYg5lfXBTmhL3YuvMsxzWLfLnKUkTeZrZFEEJuOo43xKXTH3mzUt46/ljSPQE47CzX09nazbSqXY2n/FSLt73fnNZ87qx1dFDJx1jLp+cnSOalkXNVMMj/Z8txzvb7PrperryhMtHh/Oc22vWM9KwI9p3GxxRHnTVQ/XVNz5hZPJed5ImqnF1cJB38LbubhrYQ+rqW72K82DYFpVDq5GvlsO5vZuNh50NrGtBqPez/TdLA170BvF/+oL+2iwG4P8exdyn7+4+ULvq+HFyh/VjHnWlczoYuAYOI1uZb09WLphdUOS750Soos60gshZDpWJ806onZyRn+kk+iUpP5crxso3D5LVAmo85XM7IinW3gUxXTmnPsMSWZ+m7Ja1GiqZ6yLPbm0J+fP5EwUFlbTcoAXa9kdUKLwp6bMj9ImWRKOG8lDyJixDNGfzYzgmLOqZlWvCN+jRjPc/vsnOkMdq+w2FdnOfbLevgI5R/8/8v08m9b06fm4Dei589LbEju8gttCpaeCIMJJ6bPbKyTQliu7uZEisTAmlC5zdzVmaJmkolbsqXME6sbVrnG7eqAuFqAPlC5XPy59drBJd95Ic5b1tJMRtkvWyZTwnW3ohJPCV2Io3KfS8gKebBmG+xDXD6zHNKPhhXJriyyz5KBcx+P5dGon1sz23S24HsM+Y61kdXOQTrNbB1KZusGPrZZPzGdFzb+BdGNGykQPSivj1Du0Cbw7iv+7OHTrpt+/OtO9O02d9srkO2CS+/H9P3X+2NSE02RfEb5/o0WkDWibR/yMyT4e6SfntaHfq66tUoAwh3iSXAPT7HjoitybC+AD6lh69A+xDd8MJRfx4k00V+nIbvTlKH0A3wjWsNwrNw7pu+lhM9YjK8LzAc2PEm/7YI8WfUdtKHhXfgflb8aCDXwJ84AAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg== "
+          width="62"
+          height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg=="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+    </div>
+  </div>
+  <div class="tools-bg-wrapper">
+    <div class="container tools-container">
+      <p class="section-subtitle tools-subtitle">
+        When you finally crack those tough levels, it feels pretty damn good.<br />
+        The game rewards planning — not rushing.
+      </p>
+      <div class="tools-content-wrapper">
+        <img
+          class="tools-img"
+          src="/neonflare/assets/tools-img-mob-f8170146.png"
+          alt="Screenshot of the game"
+          width="293"
+          height="239"
+          loading="lazy"
+        />
+        <div class="tools-text-wrapper">
+          <p class="tools-text">
+            When the path gets blocked, royal power steps in.
+          </p>
+          <ul class="tools-list">
+            <li class="tools-list-item">
+              <img
+                class="tools-item-img"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUnSURBVHgBrVZpTFRXFP7ue29mcNhkH1mse8OiVUEUQUFjrdGK1YjGatUqJi7porZSU22wbdKaahN/UBNt1ZimjZbW1gTEpRRbKVUQEJFtZlhkGWQZthmYmffmnb6hmBDSRmj7JefHO/fd79zznXNPLvD/gP2Tn+G/gVOMUiIiVBQdvy4hZdceptFFOfhxWv/xPNK2pS4T8O/hIpe/ys4+MTMh8aC5rAJXK7pRbPfDi5HjobbYSZ4QfobD2DG4JyMjI7Er7bDTsj/tgGdEJJU8bkZsgBWvTTdjboynIo6N9Yhi/1gDuDKW75eVXZl94ZvcVK0vHffyZuGtJnboyDvwiUvA3GANXhbuQ28miObOP8ZKjqq62rrsOTHOpLRj8jhfHTGOJ8VNdCydqu12Ilkmc5eJJm38mDBh6fLR1oBXTKp8VN5c2GYL8rT1c3nnzwHd7Uo+TpzWusPUZ0Eok1FnMiA7JxezuQrUm3J/Hk0AF7nzSk5B0W/lBl2Vg+fW9ku4ajPjhixjv7LoGb8Qjs+Oo6a8EBU19TAajHJbZ4dLHif7O7LhjsMeHgHzbf2PO544VXlZDRwrOs1UM+cjuPQOIh0DCHt9K6bMm4OmB3dR39KBqqpq+e7dYi7r+0zX4UkYSd4epstr7bY29CodoONYjEZyxGzb/L4UkFnKGxqb4Axej8WtuViUuhfTn/OFWrSitqQAzaZO1NXVo7qqhpWWlB90kSsmPw3gysRpmhqW4/+ka5G/1ZpIRDDyDJ84ibp1UUJLjRFuitZ+agk9M3bDu/MDcAF7UaE3oK2jD41NjaipNjhLHuqNzbVVnw9x4mmbUnuI30dap305mIU5NIQONfCYEbK0ocxiZ+AFAT4eWsydrENcvBdu2d+F7dFh1NT3wlhrRFWNUXpQXs1VFOY/P6SGK4PB1uMyfdyj/JLHHXE09hKsYLIFqDUD9Yp1hC3GbD9v+Gs1mB85CRQejDWxU/HWjqP4rjUZL/Rfgo18JGN9o1B8J89tZB0HI136dEqTON4sa4KdvMNXlDCBk28L9OH1fl2AZmFKYELsLMybEYI6sxGrl0bgbFwy7nFesLU3UEm7N7GuCvH+7VwPhUt06T68SYTKV73SsfmJoG6SgF4t1DZZ2PnmQEiBW9JRjYd10p5tGyFazci9eAJRP5yDft97OF/dC/daPVpEHuoWw69F1XlLhg4rj+xx4ZcZUunN885pTY2cXc33eK5dwcSJvrBV+dNuQ99kStuShDiVgB5jJS6GBMLtth5MKb57V6t8rf73/JfEgSVDtXTiGRisuv5UYDrRBuqz7BI3pb5NG1LW0Aol9epNHrRIO9WxV+VN98CIGCgJeKr5MzHYTYaDeINoB8kDJ2XJeoAqCrZSpDIiyhYIdGGVf7ReC+riQZ0cyMahD6PFoWQE56/DKqoUiMTdktNylrrbT9MChdzwo44epmNWQvDEQ6IG1KGQ97gC8GMI4ILtolAjmeaI1LtauWMm2uIXKBvyV1JDZvCyy6lBVygIcqtSxB5Fmm4eEnEYGA3voDRfT8NytVaezmO8QB4zkXNyHaVfn8jcpMIvnlvfcishtk2ye4C5cWDK9HK6y2hVBuc4ZatqVAGEKF6NcJ3yZSW6fArLdlqY5l7RmdDE9n3KMpPdmV7yUuaK8rdEuKkihOKvSypiNGjKUBXTnSCin3jxUgxWXn4FscMP0Pit2zVKZnQDWDncP2p8GY2UeH94RkcPpuxqO4ZhT5Gs7artI32jxZ/+61rPq2LBawAAAABJRU5ErkJggg=="
+                alt="Feature"
+                width="24"
+                height="24"
+              />
+              <p class="tools-item-text">
+                Laser beams to slice through obstacles
+              </p>
+            </li>
+            <li class="tools-list-item">
+              <img
+                class="tools-item-img"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATYSURBVHgBrVZdaBxVFD53dmY3s39puk23SbPR7Kbbn7RLbbCtrbWpadXSViuIUYlQEBSRVKGIDwrGBxHfVCoK+mAtFh+K0EYMCtLQEpo+hErBlsSkCfntJtkkm/2Znd2Ze/3GTcrGbpsEeuEwe3/O+c73nXsPa6MVjMSBPVccTk97x+Rkerk+Eq1gRB3s+sdPpMbjzzzWjKmA2ZbyWRFAz+jQIDk2CI8jemb2UOgXLJkw+aEB6HYlTRNxxip2iFKv7YXM01U3sGzQA5g8CID970uHfO5m2rkKXiYTVUHJ7mFb9MZNVynPhC0XgLWdPLmhYC66jx17eXj75u/Uqd69ZCpEzwtiWU6s6hGbPTOw6/qex0/QElkuDIuqKd553WBfn72rrYg4BB0/QpTKCdqoM7LDTYMyPRrRQJQbI3NppXvSQ8tgYCbeOHopLSf+Wkjgz52RVynoQgFyROWcUQlyMHCBPJwoBytlkpxKultqax3FABbdgFYAuktSDd9e02rm2YmGVTOfU2VQkDAYBbCiISjx/Hc1LAH5uUl9VHwsYtBbXV06F193+O2urhEreH1FhVPSxgLESxnVIVgKwWwwSVhCEjlhaR2pqGZ7X58+nxS7L8C5oaFEbjYT/nRzaJM1f29TMMANBKyAj8nzAS2lyzB3w9WEXJpJWbsyZ53vbDpS13H8pecK4xZKZCEbPu3vL8dEZo0115ITKpNx1oeCMhxdg982BLVb1WL5Wjj8pMRulF2MRHasnYq9ViGSB7HbXoyBGH123ydiKxetNf7T1vzg2tUHyYZrSVkivyUPglba8nkpQMmqKLyf2P7G3DGf1l0rRU+pE7cjra2tRRmQL3XrLSZM4dsVahJq+Aif7PawUJiTyy6RCiC3Lc/T0l8CoArZ0xnUJq2QB/OZYdLjBlt//uJGnLq1CODN+npFzvX4RSyFGP1EIZ9HCm4HD6dEa5GtjFtYKudJK5DMiYAhM1/kAJrrbdgU8HFUmxjasQBwl4o2MmJnOZ2MGWRXFiUau4NFOG9HcV0IXAZPRwmyBpAb5gGj1WC0Bc5V8MlY3QJnsazFp1331OBsNJqSMt50dhZtWEI2e5JET+FxVWDThUBeALjKkPl6onXQXgWoD+vlCIH2RIkccYmTEUO5AsHBYkVm4xvqvk8OQ+JRZJMDiB2twAs5XLBSH3FniAzXbhIepF3pBov54HbsT2ogzLhb8dKJvr4/igJUXrj8rj9UbsSHmUEuyKPAbAAqV4mXhEkoW4jZaog7toJBEOBy/uG5ssQ/ygrjjpBi9fuPU0H7LgTgtVD5B2ddtWeK5Kwp0DLBwC8j420kWBgphIhJVsqPoqluAwCeix1SOlM095sgeW/jV2va2i7ki3EvADU3NJiNXvqiP7L1dOqyYFSGK5gYJ66EsOsnSVJhJQBRUSgntMQDdsQpNzRHqj3SebSr/wOa72FFAVo7OkT1zx2vhBPyUaGQ0DrRntUYScnzxBlk4jYYvLlOjAHc/J34yKypXxF4j1pNQ9jrLQx+v/Hf25g5daBFfOMR+o+M8xH00txnQtcHRDY7KHRzXIikj4suWYifApPXWvbvm/dd8k/AwmAL7C59uLtp+tyTXaI3kMpO/WpkY//Ep2++ePXmmcj7LYfXlRecLzr+BTY/4Qaz5uWmAAAAAElFTkSuQmCC"
+                alt="Feature"
+                width="24"
+                height="24"
+              />
+              <p class="tools-item-text">
+                Royal cannons to clear dangerous zones
+              </p>
+            </li>
+            <li class="tools-list-item">
+              <img
+                class="tools-item-img"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQjSURBVHgB5VVdSFtnGH7PSXJOGn8So7IKRTdRKdZMKLMruxK86sBddBeyu3aiuxl0dpfZwOVKWDM2cfNijEEcLWwpw8Eu5i5mCy2tIGJLss5ajScaO01MTGJMYnK+ve/n+WLb0zF2236QnJ/ve5/nfd6/A/BSrNHR0YZgMPheOBy+Ho/HQxFNuzM3N/dpZ2engtvS/8GS6W98fPzEwsLC13t7e/FMNss2YjG2pmlMi0aZZlzxWY8nEvpOMrni9/u7he2z60l2CwK7h4aGtrbjcWC4Kvt4e4Dv9n64Csrx4+B4/wJALne4dWjL6t3ujf7+/tdmZ2fpufQ8AshkMmx3dxcOSiWQpKMtyWqF7I8/wYlMGnKxTdj/+DLIisKJ2ZE5q62thevB4Mnh4eFH+Fx+iiAUDv+MBO/YbDa5ubmZyDiJdOQlarQA6DoHFuB0xoLvy+UyJJNJqK6uho72dsmkYDUSIcTqxPY2N6ypqYHGxkYgRRQtoYiusiyDFUFTuBeNRiGVSkGpVIkKK+TzHwwODn5bSSotl8ulek6dgqWHDzlIDmOMpOB2u4Gk2+12DpwvFOD+vXtw4+ZNCIVCkE6nuZcup5N7b5FlCR0bELgVgkKhYOnq6gL/51dApfhSRBBwfX2d9qBYLMJmLAb3Fxc5iWKzVVTVo9KBgQG4PDICNrRV7fYOM0E+z1AWaFENrGhMYaEfgZN8ijGRWTDhonpon1SNXLoELS0tXHWVw0HEx0wEOmN5j8cDd+7e5QkWBDJ6Sd7/GQ7zZPIEP7NKpTJsbW3BhYsXAXuDzihizypu0MMDMo1jkiX0iieWiJFAR+9z+/ucQHjOsJrqMD/Ly8vg91/hCtPk2KGzZRNBqVzeRkMXAcqGl4zKFIF0Qw0zypPHvaEB3j53jlfbZz4f1NXVGTXEHcuaCBKJxDJutkuivuks1TypwSsTpIaCG9ixbW1tPAdUaUz0By4cLxFTDtY17VedgAwwRVWhBstTNxSACI2R2DfPnoXV1VXo6+s7fP8EeWxj47aJYHJy8jusYyZAfpmehjdOnwY3SicSQUDefuL1wiOM/dVr16DnzJmj0OGPzuLE/c1EgEOqeMzh+B5LskwGPT098AoOtr+xOkRSazHe754/z5/HxsZ4+YpeEN43NTWBz+f7w0RAyT/Z0TGEc2gaDfVXW1t56amqUgkBNRGB5vN5+Aibqog9IkJKV0dVFbt965YHj1oE6PM+FpalpaUPsSy/UFVV3tnZAQWBV1ZWuPxEPIH5UXj1GKFj1PlOl+vxVCDgCQQCKTAm6b8RcGW9vb1KYGoq+nhzsx4HnkTjgTqVGUnH2cScTmc2srb25TcTE2Pz8/M5A++pTvyvz53s9Xrfer27ewI7uhXHRg77ZfGvBw++mpmZ+R1BD+CFX/8AD3txJyfmpooAAAAASUVORK5CYII="
+                alt="Feature"
+                width="24"
+                height="24"
+              />
+              <p class="tools-item-text">
+                Special boosters created by smart matches
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section map-section" id="map">
+  <div class="section-title-wrapper map-title-wrapper">
+    <div class="container section-title-container">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARHSURBVHgB7VrNThRBEK7q3lUxIXoxHvSATyC+AbwBF87C1ajxDcBXIMZ4A84clCeAN5A3YBO9GC4YVH52psuq6uqZ2eFvWLhtf8mku+uv/76pnZlehIyMMUD7b+fA42sgmOPmTJTiHiDtQUnb+OLTt7YPQkbGDUD7H2bAl+tGsqswgDCcxxdfBkmQyZbRGbT/Zhac3+Hq444uhxBKJtznPWlksmV0gmY0V36H7kRLYMINX0mGc5CR0QWuvElGa+Ix+P66VHJmm1DYA/4KP3vNghACYRccbuDztc0LbBdY9xVug0DzObNNIOjH+xUmz4495MdsJfWSNlTXhoMFuC34zTWTbcJA+++WOMusXmrAOs16o3gJt+4Y5pCIELa2HCwuCvHidXDg4QnyT6zn9l8PR87BtJO2h3/HDlDk6GCK5Sdn3HaxjUMupW4lFlEOpYOCy56UzkOfYxenXm1KlkFgHesLLjHEtsZzsV7y5aUklhH7cdIPpY92FC+k6BM4npOyMBlfAdiW5wnsQyR69g/efFHtkg0leTB/iDEo1HXRESV7k4s9lyGNUXRcBpY785c296Z1tQ31GEVHNh+s+uQxUxwzcB2xtqnGRGksEivGJp4LqtzW0sZHOsdu5EA1xK7mXRAz2+JiQ/QT4Emou/jN9emG+uFDgKmpWD85AXiQFKd83bP6vVY3fYBeqhJBUdizYlGbpKoXLvlaWJaoC12aSMvQetZ0lKaiXA9lS816Z2uueiGe2ZMQV26sIC3eZqSoMr3qmiDbL2xvA1b6QNYHgZHLLNhHvMhiaheEIxHknq52mBoNxBGiUKtntLlIbKGIUoV0AEApBHWnDlHD8W7gRt4RBgNuPOfKUxPwwB894nKa0gggrjaB8Q1OkvP9RtgzK/sxxnCISrBC6rJowqxevPhehV7Pmp6YXKMj9Czzrp60tzEogdKSh0gW2VPdVyMriZ+P5AtVBFJCJaDYhFonJJGmSwsdInkqi0QOKdEurbOvkrUKZfakyb0J2fTUDygB0UqINEkxXKO/FiqpS51RJZd41RTH5Ysx+M5eIXHPjQxmZsYav0yQFvwI4U91h8fy+KKAQrIz2wDGsIh3R78vhLJYTLTeg3pxJF4RxVBIFktZTQjUa8QO56cd0lIwYYSjLlQJKUZOGcSDEYqaztrGELOcEpCw2jvJaHIlYqJlRCEnNmNo9og2zsiq9cYNorOlxvpJ3DYLJLYQzjJi5FwiENVDbrqAZWQ8x/CY0UyOOB7jNFPeUXbjY6z86WPCoA//8iZ6FTwuNT+BdPK5Dj1cyG+jEwY+IN/l7PvxUgPWtb+1qY98hxsfA3y2tp3JNoFg8qzyr+8y/7TtmuiQfy6FhPOquwilX1a7m0OOq+a1X8jI6IjbHsTnzJbRGUqa4F+B/H3oOmimlAP4SDT1h4yMMaDnpcDHWMinC4izJh7os11Jm/qc18J/Osfvvoty5UQAAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII= " width="62" height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+      <h2 class="section-title map-title">JOURNEY MAP & GLOBAL EXPLORATION</h2>
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgB7VlNbhRHFH6vasbGIkpYWMoiWYCUfYy4ANyAnADYRiHKDXCugFCUHeYECSfAOQCKDxDJEyUbpCxIogibmaqX71W9rq75AXoYi83UZ1fXz/upV91fv57qZloBOf3mJnm+Q0I30b2aR/mEWE4oyFO+9uhnamhYE1x35PS7q+TDYyPZ2zChOL3F136cUEPDQBSyyenXB+T8MzSvDLR9STGAcD+cUEPDACSypYzmwq80nGgdQLjp9ZbhGobA5WNYJ6PVuEJ+/JgaGgaAsRm4TY5/ok0QBY/TR8eLw7bReIDfgAekxGQ6xlxH/PnDJ9SwdXD4u02bQneuC5A/vn0AYj2zzUbOmtoOcpRkDVsHfYx+SZtiYfcqp/fvItsdvlEfspT1GrYKLL/fF7oQdG54uAmrEUcSFEbRNjutQ27bWF2yPBa5VG2CjAm2TooPUDv1Gf1Op54vyVHYqww6aEeGPtq6qFL7UHTTPE71Im5Xi0F9jEwH9g5xiM91dFL0nAslfqlicPXYyPoRuiPYIvYg5lfXBTmhL3YuvMsxzWLfLnKUkTeZrZFEEJuOo43xKXTH3mzUt46/ljSPQE47CzX09nazbSqXY2n/FSLt73fnNZ87qx1dFDJx1jLp+cnSOalkXNVMMj/Z8txzvb7PrperryhMtHh/Oc22vWM9KwI9p3GxxRHnTVQ/XVNz5hZPJed5ImqnF1cJB38LbubhrYQ+rqW72K82DYFpVDq5GvlsO5vZuNh50NrGtBqPez/TdLA170BvF/+oL+2iwG4P8exdyn7+4+ULvq+HFyh/VjHnWlczoYuAYOI1uZb09WLphdUOS750Soos60gshZDpWJ806onZyRn+kk+iUpP5crxso3D5LVAmo85XM7IinW3gUxXTmnPsMSWZ+m7Ja1GiqZ6yLPbm0J+fP5EwUFlbTcoAXa9kdUKLwp6bMj9ImWRKOG8lDyJixDNGfzYzgmLOqZlWvCN+jRjPc/vsnOkMdq+w2FdnOfbLevgI5R/8/8v08m9b06fm4Dei589LbEju8gttCpaeCIMJJ6bPbKyTQliu7uZEisTAmlC5zdzVmaJmkolbsqXME6sbVrnG7eqAuFqAPlC5XPy59drBJd95Ic5b1tJMRtkvWyZTwnW3ohJPCV2Io3KfS8gKebBmG+xDXD6zHNKPhhXJriyyz5KBcx+P5dGon1sz23S24HsM+Y61kdXOQTrNbB1KZusGPrZZPzGdFzb+BdGNGykQPSivj1Du0Cbw7iv+7OHTrpt+/OtO9O02d9srkO2CS+/H9P3X+2NSE02RfEb5/o0WkDWibR/yMyT4e6SfntaHfq66tUoAwh3iSXAPT7HjoitybC+AD6lh69A+xDd8MJRfx4k00V+nIbvTlKH0A3wjWsNwrNw7pu+lhM9YjK8LzAc2PEm/7YI8WfUdtKHhXfgflb8aCDXwJ84AAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg== "
+          width="62"
+          height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg=="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+    </div>
+  </div>
+  <div class="map-bg-wrapper">
+    <div class="container map-container">
+      <p class="section-subtitle map-subtitle">
+        Every 50 levels, the world opens up.
+      </p>
+      <ul class="map-list">
+        <li class="map-list-item">
+          <p class="map-item-text">
+            Animated journey maps unlock new destinations
+          </p>
+        </li>
+        <li class="map-list-item">
+          <p class="map-item-text">
+            Story cutscenes bring the adventure to life
+          </p>
+        </li>
+        <li class="map-list-item">
+          <p class="map-item-text">
+            Each location introduces unique visuals and puzzle themes
+          </p>
+        </li>
+      </ul>
+      <p class="map-text">
+        You’re not just completing levels — you’re traveling the globe.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="section play-section" id="play">
+  <div class="section-title-wrapper play-title-wrapper">
+    <div class="container section-title-container">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARHSURBVHgB7VrNThRBEK7q3lUxIXoxHvSATyC+AbwBF87C1ajxDcBXIMZ4A84clCeAN5A3YBO9GC4YVH52psuq6uqZ2eFvWLhtf8mku+uv/76pnZlehIyMMUD7b+fA42sgmOPmTJTiHiDtQUnb+OLTt7YPQkbGDUD7H2bAl+tGsqswgDCcxxdfBkmQyZbRGbT/Zhac3+Hq444uhxBKJtznPWlksmV0gmY0V36H7kRLYMINX0mGc5CR0QWuvElGa+Ix+P66VHJmm1DYA/4KP3vNghACYRccbuDztc0LbBdY9xVug0DzObNNIOjH+xUmz4495MdsJfWSNlTXhoMFuC34zTWTbcJA+++WOMusXmrAOs16o3gJt+4Y5pCIELa2HCwuCvHidXDg4QnyT6zn9l8PR87BtJO2h3/HDlDk6GCK5Sdn3HaxjUMupW4lFlEOpYOCy56UzkOfYxenXm1KlkFgHesLLjHEtsZzsV7y5aUklhH7cdIPpY92FC+k6BM4npOyMBlfAdiW5wnsQyR69g/efFHtkg0leTB/iDEo1HXRESV7k4s9lyGNUXRcBpY785c296Z1tQ31GEVHNh+s+uQxUxwzcB2xtqnGRGksEivGJp4LqtzW0sZHOsdu5EA1xK7mXRAz2+JiQ/QT4Emou/jN9emG+uFDgKmpWD85AXiQFKd83bP6vVY3fYBeqhJBUdizYlGbpKoXLvlaWJaoC12aSMvQetZ0lKaiXA9lS816Z2uueiGe2ZMQV26sIC3eZqSoMr3qmiDbL2xvA1b6QNYHgZHLLNhHvMhiaheEIxHknq52mBoNxBGiUKtntLlIbKGIUoV0AEApBHWnDlHD8W7gRt4RBgNuPOfKUxPwwB894nKa0gggrjaB8Q1OkvP9RtgzK/sxxnCISrBC6rJowqxevPhehV7Pmp6YXKMj9Czzrp60tzEogdKSh0gW2VPdVyMriZ+P5AtVBFJCJaDYhFonJJGmSwsdInkqi0QOKdEurbOvkrUKZfakyb0J2fTUDygB0UqINEkxXKO/FiqpS51RJZd41RTH5Ysx+M5eIXHPjQxmZsYav0yQFvwI4U91h8fy+KKAQrIz2wDGsIh3R78vhLJYTLTeg3pxJF4RxVBIFktZTQjUa8QO56cd0lIwYYSjLlQJKUZOGcSDEYqaztrGELOcEpCw2jvJaHIlYqJlRCEnNmNo9og2zsiq9cYNorOlxvpJ3DYLJLYQzjJi5FwiENVDbrqAZWQ8x/CY0UyOOB7jNFPeUXbjY6z86WPCoA//8iZ6FTwuNT+BdPK5Dj1cyG+jEwY+IN/l7PvxUgPWtb+1qY98hxsfA3y2tp3JNoFg8qzyr+8y/7TtmuiQfy6FhPOquwilX1a7m0OOq+a1X8jI6IjbHsTnzJbRGUqa4F+B/H3oOmimlAP4SDT1h4yMMaDnpcDHWMinC4izJh7os11Jm/qc18J/Osfvvoty5UQAAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII= " width="62" height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+      <h2 class="section-title play-title">
+        PLAY YOUR WAY (RELAXED BUT COMPETITIVE)
+      </h2>
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgB7VlNbhRHFH6vasbGIkpYWMoiWYCUfYy4ANyAnADYRiHKDXCugFCUHeYECSfAOQCKDxDJEyUbpCxIogibmaqX71W9rq75AXoYi83UZ1fXz/upV91fv57qZloBOf3mJnm+Q0I30b2aR/mEWE4oyFO+9uhnamhYE1x35PS7q+TDYyPZ2zChOL3F136cUEPDQBSyyenXB+T8MzSvDLR9STGAcD+cUEPDACSypYzmwq80nGgdQLjp9ZbhGobA5WNYJ6PVuEJ+/JgaGgaAsRm4TY5/ok0QBY/TR8eLw7bReIDfgAekxGQ6xlxH/PnDJ9SwdXD4u02bQneuC5A/vn0AYj2zzUbOmtoOcpRkDVsHfYx+SZtiYfcqp/fvItsdvlEfspT1GrYKLL/fF7oQdG54uAmrEUcSFEbRNjutQ27bWF2yPBa5VG2CjAm2TooPUDv1Gf1Op54vyVHYqww6aEeGPtq6qFL7UHTTPE71Im5Xi0F9jEwH9g5xiM91dFL0nAslfqlicPXYyPoRuiPYIvYg5lfXBTmhL3YuvMsxzWLfLnKUkTeZrZFEEJuOo43xKXTH3mzUt46/ljSPQE47CzX09nazbSqXY2n/FSLt73fnNZ87qx1dFDJx1jLp+cnSOalkXNVMMj/Z8txzvb7PrperryhMtHh/Oc22vWM9KwI9p3GxxRHnTVQ/XVNz5hZPJed5ImqnF1cJB38LbubhrYQ+rqW72K82DYFpVDq5GvlsO5vZuNh50NrGtBqPez/TdLA170BvF/+oL+2iwG4P8exdyn7+4+ULvq+HFyh/VjHnWlczoYuAYOI1uZb09WLphdUOS750Soos60gshZDpWJ806onZyRn+kk+iUpP5crxso3D5LVAmo85XM7IinW3gUxXTmnPsMSWZ+m7Ja1GiqZ6yLPbm0J+fP5EwUFlbTcoAXa9kdUKLwp6bMj9ImWRKOG8lDyJixDNGfzYzgmLOqZlWvCN+jRjPc/vsnOkMdq+w2FdnOfbLevgI5R/8/8v08m9b06fm4Dei589LbEju8gttCpaeCIMJJ6bPbKyTQliu7uZEisTAmlC5zdzVmaJmkolbsqXME6sbVrnG7eqAuFqAPlC5XPy59drBJd95Ic5b1tJMRtkvWyZTwnW3ohJPCV2Io3KfS8gKebBmG+xDXD6zHNKPhhXJriyyz5KBcx+P5dGon1sz23S24HsM+Y61kdXOQTrNbB1KZusGPrZZPzGdFzb+BdGNGykQPSivj1Du0Cbw7iv+7OHTrpt+/OtO9O02d9srkO2CS+/H9P3X+2NSE02RfEb5/o0WkDWibR/yMyT4e6SfntaHfq66tUoAwh3iSXAPT7HjoitybC+AD6lh69A+xDd8MJRfx4k00V+nIbvTlKH0A3wjWsNwrNw7pu+lhM9YjK8LzAc2PEm/7YI8WfUdtKHhXfgflb8aCDXwJ84AAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg== "
+          width="62"
+          height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg=="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+    </div>
+  </div>
+  <div class="play-bg-wrapper">
+    <div class="container play-container">
+      <p class="section-subtitle play-subtitle">
+        Perfect for chilling out, but you can still compete if that's your
+        thing.
+      </p>
+      <ul class="play-list">
+        <li class="play-list-item">
+          <p class="play-item-text">Easy to start, relaxing to play</p>
+        </li>
+        <li class="play-list-item">
+          <p class="play-item-text">No pressure gameplay for casual sessions</p>
+        </li>
+        <li class="play-list-item">
+          <p class="play-item-text">
+            Optional competitive elements for those who want more
+          </p>
+        </li>
+      </ul>
+      <p class="play-text">
+        Compete on global leaderboards, challenge top players, and see how far
+        your royal skills can take you.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="screenshots-section section" id="screenshots">
+  <div class="section-title-wrapper benefits-title-wrapper">
+    <div class="container section-title-container">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARHSURBVHgB7VrNThRBEK7q3lUxIXoxHvSATyC+AbwBF87C1ajxDcBXIMZ4A84clCeAN5A3YBO9GC4YVH52psuq6uqZ2eFvWLhtf8mku+uv/76pnZlehIyMMUD7b+fA42sgmOPmTJTiHiDtQUnb+OLTt7YPQkbGDUD7H2bAl+tGsqswgDCcxxdfBkmQyZbRGbT/Zhac3+Hq444uhxBKJtznPWlksmV0gmY0V36H7kRLYMINX0mGc5CR0QWuvElGa+Ix+P66VHJmm1DYA/4KP3vNghACYRccbuDztc0LbBdY9xVug0DzObNNIOjH+xUmz4495MdsJfWSNlTXhoMFuC34zTWTbcJA+++WOMusXmrAOs16o3gJt+4Y5pCIELa2HCwuCvHidXDg4QnyT6zn9l8PR87BtJO2h3/HDlDk6GCK5Sdn3HaxjUMupW4lFlEOpYOCy56UzkOfYxenXm1KlkFgHesLLjHEtsZzsV7y5aUklhH7cdIPpY92FC+k6BM4npOyMBlfAdiW5wnsQyR69g/efFHtkg0leTB/iDEo1HXRESV7k4s9lyGNUXRcBpY785c296Z1tQ31GEVHNh+s+uQxUxwzcB2xtqnGRGksEivGJp4LqtzW0sZHOsdu5EA1xK7mXRAz2+JiQ/QT4Emou/jN9emG+uFDgKmpWD85AXiQFKd83bP6vVY3fYBeqhJBUdizYlGbpKoXLvlaWJaoC12aSMvQetZ0lKaiXA9lS816Z2uueiGe2ZMQV26sIC3eZqSoMr3qmiDbL2xvA1b6QNYHgZHLLNhHvMhiaheEIxHknq52mBoNxBGiUKtntLlIbKGIUoV0AEApBHWnDlHD8W7gRt4RBgNuPOfKUxPwwB894nKa0gggrjaB8Q1OkvP9RtgzK/sxxnCISrBC6rJowqxevPhehV7Pmp6YXKMj9Czzrp60tzEogdKSh0gW2VPdVyMriZ+P5AtVBFJCJaDYhFonJJGmSwsdInkqi0QOKdEurbOvkrUKZfakyb0J2fTUDygB0UqINEkxXKO/FiqpS51RJZd41RTH5Ysx+M5eIXHPjQxmZsYav0yQFvwI4U91h8fy+KKAQrIz2wDGsIh3R78vhLJYTLTeg3pxJF4RxVBIFktZTQjUa8QO56cd0lIwYYSjLlQJKUZOGcSDEYqaztrGELOcEpCw2jvJaHIlYqJlRCEnNmNo9og2zsiq9cYNorOlxvpJ3DYLJLYQzjJi5FwiENVDbrqAZWQ8x/CY0UyOOB7jNFPeUXbjY6z86WPCoA//8iZ6FTwuNT+BdPK5Dj1cyG+jEwY+IN/l7PvxUgPWtb+1qY98hxsfA3y2tp3JNoFg8qzyr+8y/7TtmuiQfy6FhPOquwilX1a7m0OOq+a1X8jI6IjbHsTnzJbRGUqa4F+B/H3oOmimlAP4SDT1h4yMMaDnpcDHWMinC4izJh7os11Jm/qc18J/Osfvvoty5UQAAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII= " width="62" height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+      <h2 class="section-title play-title">Screenshots</h2>
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgB7VlNbhRHFH6vasbGIkpYWMoiWYCUfYy4ANyAnADYRiHKDXCugFCUHeYECSfAOQCKDxDJEyUbpCxIogibmaqX71W9rq75AXoYi83UZ1fXz/upV91fv57qZloBOf3mJnm+Q0I30b2aR/mEWE4oyFO+9uhnamhYE1x35PS7q+TDYyPZ2zChOL3F136cUEPDQBSyyenXB+T8MzSvDLR9STGAcD+cUEPDACSypYzmwq80nGgdQLjp9ZbhGobA5WNYJ6PVuEJ+/JgaGgaAsRm4TY5/ok0QBY/TR8eLw7bReIDfgAekxGQ6xlxH/PnDJ9SwdXD4u02bQneuC5A/vn0AYj2zzUbOmtoOcpRkDVsHfYx+SZtiYfcqp/fvItsdvlEfspT1GrYKLL/fF7oQdG54uAmrEUcSFEbRNjutQ27bWF2yPBa5VG2CjAm2TooPUDv1Gf1Op54vyVHYqww6aEeGPtq6qFL7UHTTPE71Im5Xi0F9jEwH9g5xiM91dFL0nAslfqlicPXYyPoRuiPYIvYg5lfXBTmhL3YuvMsxzWLfLnKUkTeZrZFEEJuOo43xKXTH3mzUt46/ljSPQE47CzX09nazbSqXY2n/FSLt73fnNZ87qx1dFDJx1jLp+cnSOalkXNVMMj/Z8txzvb7PrperryhMtHh/Oc22vWM9KwI9p3GxxRHnTVQ/XVNz5hZPJed5ImqnF1cJB38LbubhrYQ+rqW72K82DYFpVDq5GvlsO5vZuNh50NrGtBqPez/TdLA170BvF/+oL+2iwG4P8exdyn7+4+ULvq+HFyh/VjHnWlczoYuAYOI1uZb09WLphdUOS750Soos60gshZDpWJ806onZyRn+kk+iUpP5crxso3D5LVAmo85XM7IinW3gUxXTmnPsMSWZ+m7Ja1GiqZ6yLPbm0J+fP5EwUFlbTcoAXa9kdUKLwp6bMj9ImWRKOG8lDyJixDNGfzYzgmLOqZlWvCN+jRjPc/vsnOkMdq+w2FdnOfbLevgI5R/8/8v08m9b06fm4Dei589LbEju8gttCpaeCIMJJ6bPbKyTQliu7uZEisTAmlC5zdzVmaJmkolbsqXME6sbVrnG7eqAuFqAPlC5XPy59drBJd95Ic5b1tJMRtkvWyZTwnW3ohJPCV2Io3KfS8gKebBmG+xDXD6zHNKPhhXJriyyz5KBcx+P5dGon1sz23S24HsM+Y61kdXOQTrNbB1KZusGPrZZPzGdFzb+BdGNGykQPSivj1Du0Cbw7iv+7OHTrpt+/OtO9O02d9srkO2CS+/H9P3X+2NSE02RfEb5/o0WkDWibR/yMyT4e6SfntaHfq66tUoAwh3iSXAPT7HjoitybC+AD6lh69A+xDd8MJRfx4k00V+nIbvTlKH0A3wjWsNwrNw7pu+lhM9YjK8LzAc2PEm/7YI8WfUdtKHhXfgflb8aCDXwJ84AAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg== "
+          width="62"
+          height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg=="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+    </div>
+  </div>
+  <div class="screenshots-bg-wrapper">
+    <div class="container screenshots-container">
+      <div class="screenshots-swiper-container">
+        <ul class="swiper-wrapper screenshots-swiper-wrapper">
+          <li class="swiper-slide screenshots-slide">
+            <img
+              class="screenshots-img"
+              src="/neonflare/assets/screenshots-img1-a15e5f83.png"
+              alt="Screenshot of the game"
+              width="323"
+              height="574"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide screenshots-slide">
+            <img
+              class="screenshots-img"
+              src="/neonflare/assets/screenshots-img2-5d72cd8f.png"
+              alt="Screenshot of the game"
+              width="323"
+              height="574"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide screenshots-slide">
+            <img
+              class="screenshots-img"
+              src="/neonflare/assets/screenshots-img3-28f3a66b.png"
+              alt="Screenshot of the game"
+              width="323"
+              height="574"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide screenshots-slide">
+            <img
+              class="screenshots-img"
+              src="/neonflare/assets/screenshots-img4-e22029d0.png"
+              alt="Screenshot of the game"
+              width="323"
+              height="574"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide screenshots-slide">
+            <img
+              class="screenshots-img"
+              src="/neonflare/assets/screenshots-img5-3cde52b1.png"
+              alt="Screenshot of the game"
+              width="323"
+              height="574"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="dots">
+        <div class="screenshots-dot active"></div>
+        <div class="screenshots-dot"></div>
+        <div class="screenshots-dot"></div>
+        <div class="screenshots-dot"></div>
+        <div class="screenshots-dot"></div>
+      </div>
+      <div class="controls screenshots-controls">
+        <button
+          class="arrow-btn"
+          id="screenshotsLeftArrow"
+          aria-label="Previous slide"
+        >
+          <svg class="arrow-icon" width="80" height="80">
+            <use href="/neonflare/assets/sprite-ab398886.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+
+        <button
+          class="arrow-btn"
+          id="screenshotsRightArrow"
+          aria-label="Next slide"
+        >
+          <svg class="arrow-icon" width="80" height="80">
+            <use href="/neonflare/assets/sprite-ab398886.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section reviews-section" id="reviews">
+  <div class="section-title-wrapper reviews-title-wrapper">
+    <div class="container section-title-container">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARHSURBVHgB7VrNThRBEK7q3lUxIXoxHvSATyC+AbwBF87C1ajxDcBXIMZ4A84clCeAN5A3YBO9GC4YVH52psuq6uqZ2eFvWLhtf8mku+uv/76pnZlehIyMMUD7b+fA42sgmOPmTJTiHiDtQUnb+OLTt7YPQkbGDUD7H2bAl+tGsqswgDCcxxdfBkmQyZbRGbT/Zhac3+Hq444uhxBKJtznPWlksmV0gmY0V36H7kRLYMINX0mGc5CR0QWuvElGa+Ix+P66VHJmm1DYA/4KP3vNghACYRccbuDztc0LbBdY9xVug0DzObNNIOjH+xUmz4495MdsJfWSNlTXhoMFuC34zTWTbcJA+++WOMusXmrAOs16o3gJt+4Y5pCIELa2HCwuCvHidXDg4QnyT6zn9l8PR87BtJO2h3/HDlDk6GCK5Sdn3HaxjUMupW4lFlEOpYOCy56UzkOfYxenXm1KlkFgHesLLjHEtsZzsV7y5aUklhH7cdIPpY92FC+k6BM4npOyMBlfAdiW5wnsQyR69g/efFHtkg0leTB/iDEo1HXRESV7k4s9lyGNUXRcBpY785c296Z1tQ31GEVHNh+s+uQxUxwzcB2xtqnGRGksEivGJp4LqtzW0sZHOsdu5EA1xK7mXRAz2+JiQ/QT4Emou/jN9emG+uFDgKmpWD85AXiQFKd83bP6vVY3fYBeqhJBUdizYlGbpKoXLvlaWJaoC12aSMvQetZ0lKaiXA9lS816Z2uueiGe2ZMQV26sIC3eZqSoMr3qmiDbL2xvA1b6QNYHgZHLLNhHvMhiaheEIxHknq52mBoNxBGiUKtntLlIbKGIUoV0AEApBHWnDlHD8W7gRt4RBgNuPOfKUxPwwB894nKa0gggrjaB8Q1OkvP9RtgzK/sxxnCISrBC6rJowqxevPhehV7Pmp6YXKMj9Czzrp60tzEogdKSh0gW2VPdVyMriZ+P5AtVBFJCJaDYhFonJJGmSwsdInkqi0QOKdEurbOvkrUKZfakyb0J2fTUDygB0UqINEkxXKO/FiqpS51RJZd41RTH5Ysx+M5eIXHPjQxmZsYav0yQFvwI4U91h8fy+KKAQrIz2wDGsIh3R78vhLJYTLTeg3pxJF4RxVBIFktZTQjUa8QO56cd0lIwYYSjLlQJKUZOGcSDEYqaztrGELOcEpCw2jvJaHIlYqJlRCEnNmNo9og2zsiq9cYNorOlxvpJ3DYLJLYQzjJi5FwiENVDbrqAZWQ8x/CY0UyOOB7jNFPeUXbjY6z86WPCoA//8iZ6FTwuNT+BdPK5Dj1cyG+jEwY+IN/l7PvxUgPWtb+1qY98hxsfA3y2tp3JNoFg8qzyr+8y/7TtmuiQfy6FhPOquwilX1a7m0OOq+a1X8jI6IjbHsTnzJbRGUqa4F+B/H3oOmimlAP4SDT1h4yMMaDnpcDHWMinC4izJh7os11Jm/qc18J/Osfvvoty5UQAAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII= " width="62" height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+      <h2 class="section-title play-title">Reviews</h2>
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgB7VlNbhRHFH6vasbGIkpYWMoiWYCUfYy4ANyAnADYRiHKDXCugFCUHeYECSfAOQCKDxDJEyUbpCxIogibmaqX71W9rq75AXoYi83UZ1fXz/upV91fv57qZloBOf3mJnm+Q0I30b2aR/mEWE4oyFO+9uhnamhYE1x35PS7q+TDYyPZ2zChOL3F136cUEPDQBSyyenXB+T8MzSvDLR9STGAcD+cUEPDACSypYzmwq80nGgdQLjp9ZbhGobA5WNYJ6PVuEJ+/JgaGgaAsRm4TY5/ok0QBY/TR8eLw7bReIDfgAekxGQ6xlxH/PnDJ9SwdXD4u02bQneuC5A/vn0AYj2zzUbOmtoOcpRkDVsHfYx+SZtiYfcqp/fvItsdvlEfspT1GrYKLL/fF7oQdG54uAmrEUcSFEbRNjutQ27bWF2yPBa5VG2CjAm2TooPUDv1Gf1Op54vyVHYqww6aEeGPtq6qFL7UHTTPE71Im5Xi0F9jEwH9g5xiM91dFL0nAslfqlicPXYyPoRuiPYIvYg5lfXBTmhL3YuvMsxzWLfLnKUkTeZrZFEEJuOo43xKXTH3mzUt46/ljSPQE47CzX09nazbSqXY2n/FSLt73fnNZ87qx1dFDJx1jLp+cnSOalkXNVMMj/Z8txzvb7PrperryhMtHh/Oc22vWM9KwI9p3GxxRHnTVQ/XVNz5hZPJed5ImqnF1cJB38LbubhrYQ+rqW72K82DYFpVDq5GvlsO5vZuNh50NrGtBqPez/TdLA170BvF/+oL+2iwG4P8exdyn7+4+ULvq+HFyh/VjHnWlczoYuAYOI1uZb09WLphdUOS750Soos60gshZDpWJ806onZyRn+kk+iUpP5crxso3D5LVAmo85XM7IinW3gUxXTmnPsMSWZ+m7Ja1GiqZ6yLPbm0J+fP5EwUFlbTcoAXa9kdUKLwp6bMj9ImWRKOG8lDyJixDNGfzYzgmLOqZlWvCN+jRjPc/vsnOkMdq+w2FdnOfbLevgI5R/8/8v08m9b06fm4Dei589LbEju8gttCpaeCIMJJ6bPbKyTQliu7uZEisTAmlC5zdzVmaJmkolbsqXME6sbVrnG7eqAuFqAPlC5XPy59drBJd95Ic5b1tJMRtkvWyZTwnW3ohJPCV2Io3KfS8gKebBmG+xDXD6zHNKPhhXJriyyz5KBcx+P5dGon1sz23S24HsM+Y61kdXOQTrNbB1KZusGPrZZPzGdFzb+BdGNGykQPSivj1Du0Cbw7iv+7OHTrpt+/OtO9O02d9srkO2CS+/H9P3X+2NSE02RfEb5/o0WkDWibR/yMyT4e6SfntaHfq66tUoAwh3iSXAPT7HjoitybC+AD6lh69A+xDd8MJRfx4k00V+nIbvTlKH0A3wjWsNwrNw7pu+lhM9YjK8LzAc2PEm/7YI8WfUdtKHhXfgflb8aCDXwJ84AAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg== "
+          width="62"
+          height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg=="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+    </div>
+  </div>
+  <div class="reviews-bg-wrapper">
+    <div class="container reviews-container">
+      <div class="reviews-content-wrapper">
+        <div class="reviews-top-wrapper">
+          <div class="reviews-rating">
+            <p class="reviews-rating-text">Rating highlight:</p>
+            <img
+              class="reviews-stars-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAQCAYAAACm53kpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKVSURBVHgB1ZZfSFNRHMd/55xt6lJ3ucupU1ciSUhZIhgUFPViSiAUQkUPmUXQQ0QFGUH0Ir0EPQhBQpAPSUQQBEFE+mAvYQ9miGTalIHK3HJu7v/uPb/OXaO2MaH5dr5wuOee8/v87uHLOb97ALYW+fz09PGRwcutRh+Kl+w8AC5eR3RfQdimZOaJe/TcBT3hRr75ib8b6j8CxbkoOy/cWxnwIyYQMc7jK3fdxSaQhaeFBvs7W1RUDtkBEuItRSzlrsbelhYz/Kdk4sn4cF9nfVWqa4fNrADlqo6kwrnHsY/V3VGFj9QwDjHJk4uPvFEdPDHvRoiwEv/mWiAwNU+fO2wWVWaeJD90c73jHpZaKykQBsDKBGMV3iTh3wYx6kipaLroxkXTIBpY0snErYSp3FkmM58+Fzh3XgupfVCpKAyISSSxZODsE2Ik4enn+vKMrvheRFjbW5vsPMlE8cC3s5N6yf42e+NhUzqemnMdFK4hscDa9KhujsyO2Y+OdcKfwkJk5rMrI/GPnxxUqukAc/UQMFWJIZbhxdbRPKD5JnD5R/T27q73jzOWgux8zq+hr0dteDZQ7cGGvWLGOFKGixyQJ9PhNLICV6/NK8MfA0EoIBl5lp3gzf3amxUW7ZiIJFQPgxb1A4+vA0ttAEZ/AQYj2NRkn3vy2jtdaAEy8qbsBDU15osQDBDUYuALcZ0QM9MoA8qSvMpGKE9wUu8suyFCRwotQEY+5yJUEg/vCno19CxoSMrVKUfvMnWe8VCL0zWz9BP0yKoGlabYAdhCMvJ/DRi6tNO5MB9Ha3N14kvQ1uro/t6RmUK1Y/Lg17BygtXXwupsiJxqr7Xmf1x23hB59dDVnm9MvlkvH9Q1Q17tkJn/DUqkqUpBttJlAAAAAElFTkSuQmCC"
+              alt="Stars"
+              width="64"
+              height="16"
+            />
+          </div>
+          <p class="reviews-text">
+            4.0 average rating<br />
+            Based on 200+ player reviews
+          </p>
+          <ul class="reviews-list">
+            <li class="reviews-list-item">
+              <p class="reviews-item-text">
+                “Relaxing, but still makes you think.”
+              </p>
+              <p class="reviews-item-name">— Daniel</p>
+            </li>
+            <li class="reviews-list-item">
+              <p class="reviews-item-text">
+                “The characters actually grow on you.”
+              </p>
+              <p class="reviews-item-name">— Emma</p>
+            </li>
+          </ul>
+        </div>
+        <img
+          class="reviews-img"
+          src="/neonflare/assets/reviews-img-36f32dc0.png"
+          alt="Screenshot of the game"
+          width="275"
+          height="356"
+          loading="lazy"
+        />
+        <ul class="reviews-list reviews-bottom-list">
+          <li class="reviews-list-item">
+            <p class="reviews-item-text">
+              “Feels like a proper adventure, not just another match-3.”
+            </p>
+            <p class="reviews-item-name">— Olivia</p>
+          </li>
+          <li class="reviews-list-item">
+            <p class="reviews-item-text">
+              “I love the journey maps and story cutscenes.”
+            </p>
+            <p class="reviews-item-name">— Sophia</p>
+          </li>
+          <li class="reviews-list-item">
+            <p class="reviews-item-text">
+              “The obstacles keep things interesting. Every level feels
+              different.”
+            </p>
+            <p class="reviews-item-name">— Martin</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="section-title-wrapper faq-title-wrapper">
+    <div class="container section-title-container">
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARHSURBVHgB7VrNThRBEK7q3lUxIXoxHvSATyC+AbwBF87C1ajxDcBXIMZ4A84clCeAN5A3YBO9GC4YVH52psuq6uqZ2eFvWLhtf8mku+uv/76pnZlehIyMMUD7b+fA42sgmOPmTJTiHiDtQUnb+OLTt7YPQkbGDUD7H2bAl+tGsqswgDCcxxdfBkmQyZbRGbT/Zhac3+Hq444uhxBKJtznPWlksmV0gmY0V36H7kRLYMINX0mGc5CR0QWuvElGa+Ix+P66VHJmm1DYA/4KP3vNghACYRccbuDztc0LbBdY9xVug0DzObNNIOjH+xUmz4495MdsJfWSNlTXhoMFuC34zTWTbcJA+++WOMusXmrAOs16o3gJt+4Y5pCIELa2HCwuCvHidXDg4QnyT6zn9l8PR87BtJO2h3/HDlDk6GCK5Sdn3HaxjUMupW4lFlEOpYOCy56UzkOfYxenXm1KlkFgHesLLjHEtsZzsV7y5aUklhH7cdIPpY92FC+k6BM4npOyMBlfAdiW5wnsQyR69g/efFHtkg0leTB/iDEo1HXRESV7k4s9lyGNUXRcBpY785c296Z1tQ31GEVHNh+s+uQxUxwzcB2xtqnGRGksEivGJp4LqtzW0sZHOsdu5EA1xK7mXRAz2+JiQ/QT4Emou/jN9emG+uFDgKmpWD85AXiQFKd83bP6vVY3fYBeqhJBUdizYlGbpKoXLvlaWJaoC12aSMvQetZ0lKaiXA9lS816Z2uueiGe2ZMQV26sIC3eZqSoMr3qmiDbL2xvA1b6QNYHgZHLLNhHvMhiaheEIxHknq52mBoNxBGiUKtntLlIbKGIUoV0AEApBHWnDlHD8W7gRt4RBgNuPOfKUxPwwB894nKa0gggrjaB8Q1OkvP9RtgzK/sxxnCISrBC6rJowqxevPhehV7Pmp6YXKMj9Czzrp60tzEogdKSh0gW2VPdVyMriZ+P5AtVBFJCJaDYhFonJJGmSwsdInkqi0QOKdEurbOvkrUKZfakyb0J2fTUDygB0UqINEkxXKO/FiqpS51RJZd41RTH5Ysx+M5eIXHPjQxmZsYav0yQFvwI4U91h8fy+KKAQrIz2wDGsIh3R78vhLJYTLTeg3pxJF4RxVBIFktZTQjUa8QO56cd0lIwYYSjLlQJKUZOGcSDEYqaztrGELOcEpCw2jvJaHIlYqJlRCEnNmNo9og2zsiq9cYNorOlxvpJ3DYLJLYQzjJi5FwiENVDbrqAZWQ8x/CY0UyOOB7jNFPeUXbjY6z86WPCoA//8iZ6FTwuNT+BdPK5Dj1cyG+jEwY+IN/l7PvxUgPWtb+1qY98hxsfA3y2tp3JNoFg8qzyr+8y/7TtmuiQfy6FhPOquwilX1a7m0OOq+a1X8jI6IjbHsTnzJbRGUqa4F+B/H3oOmimlAP4SDT1h4yMMaDnpcDHWMinC4izJh7os11Jm/qc18J/Osfvvoty5UQAAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII= " width="62" height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7VZLThtBEH3VM57JMpusokTMKqtIyQ2SE8Q3SNYRBHMCxieIIVGUXZQTACeAG8ANPHx2LDBCQoDdVby2QcLGY4zYjIyfVOru+nTXa9XUNDDHHM8CghmDtRc/IZKvMNS5fEnpkOUmfLcp2d/i1m+miNvhj1Wo5aUOTnJ5s94M08oSJ4llkmhwukApmHSLSa+V+reXvsHh34MbK1Yk+9WqJHE7WP4J08Y9g7iWvF1bGRuzv9TG4JIeQgcaZZUjbu3vH+Ci3VIHtc+S/d4ZjlmssyI2MC3CHpPsZhbsNeA4AdIE51cp3FkCqVEuKEjQM45d2nsJvOdcKFcJtJcCvgbzKZR6ow7KUVP61+jLMawZa35gC3tcHL2HP3lXmpRLTyHx5SCGov3YGI+BWtNNsouIBf7AqzvaF3fmsQ0FxOH8HvMRCdcGVYFX6jwTjm6cqMftsXr/UBd1MQkWgp9eqBUsdf6OnGyXOqj/KNmfvUfFjCKWukPF0P9+1cZ3b+pHSQ8QB10H06GQ1+tblSMeQPINfiahexc3qiKs+/qx/i12am1iGkSS92MwQ2DJ5yz51VIHNjVeXh6mM/hkbSywwYYL+IKhJ6v9H/0NzjHHM8A1LhKyJUcUV80AAAAASUVORK5CYII="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+      <h2 class="section-title play-title">FAQ</h2>
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAASCAYAAABM3qycAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgB7VlNbhRHFH6vasbGIkpYWMoiWYCUfYy4ANyAnADYRiHKDXCugFCUHeYECSfAOQCKDxDJEyUbpCxIogibmaqX71W9rq75AXoYi83UZ1fXz/upV91fv57qZloBOf3mJnm+Q0I30b2aR/mEWE4oyFO+9uhnamhYE1x35PS7q+TDYyPZ2zChOL3F136cUEPDQBSyyenXB+T8MzSvDLR9STGAcD+cUEPDACSypYzmwq80nGgdQLjp9ZbhGobA5WNYJ6PVuEJ+/JgaGgaAsRm4TY5/ok0QBY/TR8eLw7bReIDfgAekxGQ6xlxH/PnDJ9SwdXD4u02bQneuC5A/vn0AYj2zzUbOmtoOcpRkDVsHfYx+SZtiYfcqp/fvItsdvlEfspT1GrYKLL/fF7oQdG54uAmrEUcSFEbRNjutQ27bWF2yPBa5VG2CjAm2TooPUDv1Gf1Op54vyVHYqww6aEeGPtq6qFL7UHTTPE71Im5Xi0F9jEwH9g5xiM91dFL0nAslfqlicPXYyPoRuiPYIvYg5lfXBTmhL3YuvMsxzWLfLnKUkTeZrZFEEJuOo43xKXTH3mzUt46/ljSPQE47CzX09nazbSqXY2n/FSLt73fnNZ87qx1dFDJx1jLp+cnSOalkXNVMMj/Z8txzvb7PrperryhMtHh/Oc22vWM9KwI9p3GxxRHnTVQ/XVNz5hZPJed5ImqnF1cJB38LbubhrYQ+rqW72K82DYFpVDq5GvlsO5vZuNh50NrGtBqPez/TdLA170BvF/+oL+2iwG4P8exdyn7+4+ULvq+HFyh/VjHnWlczoYuAYOI1uZb09WLphdUOS750Soos60gshZDpWJ806onZyRn+kk+iUpP5crxso3D5LVAmo85XM7IinW3gUxXTmnPsMSWZ+m7Ja1GiqZ6yLPbm0J+fP5EwUFlbTcoAXa9kdUKLwp6bMj9ImWRKOG8lDyJixDNGfzYzgmLOqZlWvCN+jRjPc/vsnOkMdq+w2FdnOfbLevgI5R/8/8v08m9b06fm4Dei589LbEju8gttCpaeCIMJJ6bPbKyTQliu7uZEisTAmlC5zdzVmaJmkolbsqXME6sbVrnG7eqAuFqAPlC5XPy59drBJd95Ic5b1tJMRtkvWyZTwnW3ohJPCV2Io3KfS8gKebBmG+xDXD6zHNKPhhXJriyyz5KBcx+P5dGon1sz23S24HsM+Y61kdXOQTrNbB1KZusGPrZZPzGdFzb+BdGNGykQPSivj1Du0Cbw7iv+7OHTrpt+/OtO9O02d9srkO2CS+/H9P3X+2NSE02RfEb5/o0WkDWibR/yMyT4e6SfntaHfq66tUoAwh3iSXAPT7HjoitybC+AD6lh69A+xDd8MJRfx4k00V+nIbvTlKH0A3wjWsNwrNw7pu+lhM9YjK8LzAc2PEm/7YI8WfUdtKHhXfgflb8aCDXwJ84AAAAASUVORK5CYII= "
+          media="(min-width: 1440px)"
+          width="155"
+          height="18" />
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg== "
+          width="62"
+          height="18" />
+        <img
+          class="title-line-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7Va9UttAEP72JDskRSZFKDKeZKw34BHyBqFNldSZEMQTID9BbMJk0mXyBuEJ4BGYYSioLKCkcUNhGW757mT+BLINlTD6ZnZ09+3u3e3e3eqAGjWeBeRmR/vfPyKQL1Ass/uGMqDFf5yPOhL9STFHuApcj3+sw2pSamkkkfcbHcwJfODaX/kKg79TrS3WJPrVLVMzeatMXsxmm5IyWV0mq4cKIg/8cKWPfLHTMIANIom6g6JCj1Z/Qm18dwbTlQ+9NVQMhvfa3ef2jPa892dLRVL735buDdorbexrR8UgXFTCI7n+MC85h4RDIMggFDtagGavS+3Dt3tovDvg7tO+MeJ36P0kdP5DaDCCsm0kQ+DGZVupNw1+6WPIBUHOeR0yhM386/T6kmug7ash9U36L2YiHGsCDB6FcU3Uq0TYyfa2kdu56VSvaScqDFjzDvVW5O6yyJ0V+pd40VQsuDFPx8QiZZ+zqGACQsoOZfYdD2VZWr2tm5Q/yka2S32yk8/S6uyiQmBqQ7egwYz2qbQ2toqkRJs73Ln7qzd5iX5XKmgH4yu0tbP9nwNJylQMPuY4rnqnYyp1fc9XENcPmGlFzipfb5sJ5gSFJ2vc5u/KJeATbj1Z9Z8/zjVq1HhquAAItLdoQ3X39gAAAABJRU5ErkJggg=="
+          alt="Line"
+          width="62"
+          height="18"
+      /></picture>
+    </div>
+  </div>
+  <div class="faq-bg-wrapper">
+    <div class="container faq-container">
+      <ul class="faq-list">
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Is Royal Adventure free to play?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="26" height="24">
+                  <use href="/neonflare/assets/sprite-ab398886.svg#icon-hand"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">
+              Yes. The game is free to play with optional in-app purchases.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Can I play offline?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="26" height="24">
+                  <use href="/neonflare/assets/sprite-ab398886.svg#icon-hand"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">Yes. Offline mode is fully supported.</p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text"
+                >Is this game suitable for all ages?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="26" height="24">
+                  <use href="/neonflare/assets/sprite-ab398886.svg#icon-hand"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">
+              Yes. It’s family-friendly and designed for relaxed enjoyment.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text"
+                >Does the game include competitive features?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="26" height="24">
+                  <use href="/neonflare/assets/sprite-ab398886.svg#icon-hand"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">
+              Yes. Global leaderboards and alliances are available.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">How often is new content added?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="26" height="24">
+                  <use href="/neonflare/assets/sprite-ab398886.svg#icon-hand"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">
+              New levels, events, and journey updates are released regularly.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <a
+      class="footer-btn"
+      href="https://play.google.com/store/apps/details?id=com.dreamspark.royal.adventure&hl=en&gl=us"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg class="google-play-icon" width="240" height="64">
+        <use href="/neonflare/assets/sprite-ab398886.svg#icon-google-play"></use>
+      </svg>
+    </a>
+    <div class="footer-nav-wrapper">
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a class="footer-link" href="./privacy-policy.html"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./terms-and-conditions.html"
+              >Terms & Conditions</a
+            >
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./cookies-policy.html"
+              >Cookies Policy</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p class="footer-text">© 2025 neonflare.site — All rights reserved. </p>
+    </div>
+  </div>
+</footer>
+
+    <div class="context-menu">
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#home">Home</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#about"
+          >The Story Begins</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#gameplay">Gameplay</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#tools">Royal Tools</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#map">Journey Maps</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#play">Play Your Way</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#screenshots"
+          >Screenshots</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#reviews">Reviews</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#faq">FAQ</a>
+      </li>
+    </ul>
+    <ul class="context-privacy-list">
+      <li class="context-privacy-item">
+        <a class="context-privacy-link" href="./privacy-policy.html"
+          >Privacy Policy</a
+        >
+      </li>
+      <li class="context-privacy-item">
+        <a class="context-privacy-link" href="./terms-and-conditions.html"
+          >Terms & Conditions</a
+        >
+      </li>
+      <li class="context-privacy-item">
+        <a class="context-privacy-link" href="./cookies-policy.html"
+          >Cookies Policy</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-content-wrapper">
+    <p class="cookie-banner-text">
+      We use cookies to improve your experience on our website. By browsing this
+      website, you agree to our use of cookies.
+    </p>
+    <div class="cookie-banner-buttons">
+      <button class="cookie-decline-btn" id="cookie-decline">
+        DECLINE COOKIES
+      </button>
+      <button class="cookie-accept-btn" id="cookie-accept">
+        ACCEPT COOKIES
+      </button>
+    </div>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
